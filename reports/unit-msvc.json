@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "utc": "2026-10-14T18:23:04.992457+00:00",
+  "compiler": "cl",
+  "sanitizers_requested": false,
+  "command": [
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\cl.EXE",
+    "/nologo",
+    "/std:c11",
+    "/W4",
+    "/WX",
+    "/Od",
+    "/Zi",
+    "/IC:\\Users\\1\\Documents\\Codex\\2026-10-14\\cl-t\\outputs\\levelx-iphone-gpu-engine\\include",
+    "/RTC1",
+    "C:\\Users\\1\\Documents\\Codex\\2026-10-14\\cl-t\\outputs\\levelx-iphone-gpu-engine\\src\\levelx_scanout.c",
+    "C:\\Users\\1\\Documents\\Codex\\2026-10-14\\cl-t\\outputs\\levelx-iphone-gpu-engine\\tests\\unit\\test_scanout.c",
+    "/Fe:C:\\Users\\1\\Documents\\Codex\\2026-10-14\\cl-t\\outputs\\levelx-iphone-gpu-engine\\build\\test_scanout.exe"
+  ],
+  "build_exit": 0,
+  "build_output": "levelx_scanout.c\ntest_scanout.c\n\u0420\u040e\u0420\u0455\u0420\u00b7\u0420\u0491\u0420\u00b0\u0420\u0405\u0420\u0451\u0420\u00b5 \u0420\u0454\u0420\u0455\u0420\u0491\u0420\u00b0...\n",
+  "run_exit": 0,
+  "run_output": "PASS validation\nPASS address_edges\nPASS dma_transaction\nPASS rejection_without_side_effects\nPASS reset_and_repeat_1000\nPASS allocator_ownership\nPASS software_fill_scene\nPASS boundary_matrix_1960\nPASS status_strings\n",
+  "scope": "standalone C scanout module; not Inferno, DART hardware, or Metal"
+}
