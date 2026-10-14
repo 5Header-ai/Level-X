@@ -115,7 +115,7 @@
     "ios": "NOT RUN",
     "metal": "NOT RUN",
     "physical_iphone11": "NOT RUN",
-    "github_actions": "NOT RUN"
+    "github_actions": "reports/github-ci.json"
   },
   "acceptance_levels": {
     "1": "PARTIAL",

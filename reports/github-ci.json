@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "repository": "https://github.com/5Header-ai/Level-X",
+  "pull_request": "https://github.com/5Header-ai/Level-X/pull/1",
+  "head_sha": "7eb0c430978b7046a205d731093d37c5ca0c30bb",
+  "base_sha": "85779634afd2d577f77e60a489a20a97519202c4",
+  "checkout": "pull_request merge ref",
+  "run_id": 38621511411,
+  "job_id": 116049929685,
+  "run_url": "https://github.com/5Header-ai/Level-X/actions/runs/38621511411",
+  "completed_utc": "2026-10-14T19:12:36Z",
+  "runner_image": "windows-2025-vs2026",
+  "checks": {
+    "msvc": "9 groups PASS",
+    "msvc_address_sanitizer": "9 groups PASS",
+    "patch_application_source_identity_and_rollback": "PASS",
+    "upstream_trace_reader": "5 tests PASS"
+  },
+  "not_run": [
+    "full Inferno build in CI (separate local build report exists)",
+    "device realization/MMIO/DART/IRQ",
+    "iOS boot",
+    "native MetalProbe execution"
+  ],
+  "evidence": "GitHub job conclusion success and downloaded logs reviewed; a later metadata-only commit records this result."
+}

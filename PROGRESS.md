@@ -107,3 +107,12 @@
 - Полный A13 GPU/Metal остаётся незавершённым. Для следующей аппаратной проверки
   нужны актуальный source-only baseline Level X и отдельный iOS test fixture.
 - Коммит этапа: `chore: add reproducible handover manifest and CI checks`.
+
+### Подтверждение передачи
+
+- Опубликована feature/levelx-gpu и draft PR #1 в 5Header-ai/Level-X.
+- GitHub Actions run 38621511411: все шаги PASS; head 7eb0c430978b7046a205d731093d37c5ca0c30bb.
+- Восстановление полного bundle и fsck PASS. Исходная локальная история сохранена.
+- Коммит `docs: record successful GitHub CI and verified handover` меняет только
+  README, PROGRESS, STATUS, manifest и github-ci.json; исполняемый код и patches
+  после проверенного запуска не менялись.

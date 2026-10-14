@@ -41,6 +41,12 @@
   qemu-bundle переименован для запуска. См. windows-build.json и recipe.
 - 4 CLI проверки version/T8030/property default off/trace registration PASS.
 - 5 synthetic integration tests штатного QEMU simpletrace PASS.
+- GitHub Windows CI: MSVC/ASan, patch transfer/rollback и trace reader PASS.
+  Запуск 38621511411, tested head `7eb0c430978b7046a205d731093d37c5ca0c30bb`;
+  подробности в `github-ci.json`. Последующий commit фиксирует только результаты.
+- Source ZIP и Git bundle экспортированы; bundle verify, восстановление feature
+  HEAD и git fsck PASS. Точный экспортируемый HEAD и SHA-256 находятся рядом с
+  архивами в `levelx-release.json` (вне репозитория, чтобы не ссылаться на себя).
 
 Логи: `unit-msvc.json`, `unit-msvc-asan.json`, `transfer.json`, `baseline-audit.json`.
 Дополнительно: `unit-gcc.json`, `windows-build.json`, `qemu-registration.json`,

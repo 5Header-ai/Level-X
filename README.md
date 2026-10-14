@@ -32,7 +32,9 @@ Windows: установленный Visual Studio C++ Build Tools + Windows SDK 
 Гостевой тест: [MetalProbe](tests/integration/ios/README.md).
 Готовые решения и решения об адаптации: [REUSABLE-TECHNOLOGIES](REUSABLE-TECHNOLOGIES.md).
 Проверка целостности: `python tools/verify_manifest.py`.
-GitHub Actions workflow подготовлен; фактическое исполнение CI проверяется отдельно.
+GitHub Actions: MSVC, ASan, перенос патчей и trace reader — PASS;
+[зафиксированный запуск](https://github.com/5Header-ai/Level-X/actions/runs/38621511411),
+точные tested SHA и границы проверки — в [отчёте](reports/github-ci.json).
 
 ## Передача
 
