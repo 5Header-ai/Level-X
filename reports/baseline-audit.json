@@ -1,0 +1,706 @@
+{
+  "upstream": "https://github.com/ChefKissInc/Inferno",
+  "sha": "cc4302a99167abec69b714cfd00c38caece7e7de",
+  "scope": "source implementation, not physical A13 hardware specification",
+  "files": {
+    "VERSION": {
+      "sha256": "358f4f79e8ccee30541dec924c36fb94eaafb73d3edab7be88e8b05b8a4210b9"
+    },
+    "LICENSE": {
+      "sha256": "fd5029b1e42da571b789e2b6a13abb3c00664e339ed87d0e17ffec04d33b8ff9"
+    },
+    "hw/arm/apple-silicon/t8030.c": {
+      "sha256": "d6b4cc16752d43fd45a3e86043502e662036884c68e9e0f50b150cd149b0de65",
+      "registers": []
+    },
+    "hw/display/apple_displaypipe_v4.c": {
+      "sha256": "efc1c384b3d9aa0a6c75ac5dd0daef074da87426205b0a96b647cfe0d735376a",
+      "registers": [
+        {
+          "name": "CONTROL_INT_STATUS",
+          "offset": "0x45818",
+          "width": 32,
+          "line": 204
+        },
+        {
+          "name": "CONTROL_INT_ENABLE",
+          "offset": "0x4581C",
+          "width": 32,
+          "line": 215
+        },
+        {
+          "name": "CONTROL_VERSION",
+          "offset": "0x46020",
+          "width": 32,
+          "line": 218
+        },
+        {
+          "name": "CONTROL_FRAME_SIZE",
+          "offset": "0x4603C",
+          "width": 32,
+          "line": 221
+        },
+        {
+          "name": "GP_CONFIG_CONTROL",
+          "offset": "0x4",
+          "width": 32,
+          "line": 225
+        },
+        {
+          "name": "GP_PIXEL_FORMAT",
+          "offset": "0x1C",
+          "width": 32,
+          "line": 230
+        },
+        {
+          "name": "GP_LAYER_0_HTPC_CONFIG",
+          "offset": "0x28",
+          "width": 32,
+          "line": 234
+        },
+        {
+          "name": "GP_LAYER_1_HTPC_CONFIG",
+          "offset": "0x2C",
+          "width": 32,
+          "line": 235
+        },
+        {
+          "name": "GP_LAYER_0_DATA_START",
+          "offset": "0x30",
+          "width": 32,
+          "line": 236
+        },
+        {
+          "name": "GP_LAYER_1_DATA_START",
+          "offset": "0x34",
+          "width": 32,
+          "line": 237
+        },
+        {
+          "name": "GP_LAYER_0_DATA_END",
+          "offset": "0x40",
+          "width": 32,
+          "line": 238
+        },
+        {
+          "name": "GP_LAYER_1_DATA_END",
+          "offset": "0x44",
+          "width": 32,
+          "line": 239
+        },
+        {
+          "name": "GP_LAYER_0_HEADER_BASE",
+          "offset": "0x48",
+          "width": 32,
+          "line": 240
+        },
+        {
+          "name": "GP_LAYER_1_HEADER_BASE",
+          "offset": "0x4C",
+          "width": 32,
+          "line": 241
+        },
+        {
+          "name": "GP_LAYER_0_HEADER_END",
+          "offset": "0x58",
+          "width": 32,
+          "line": 242
+        },
+        {
+          "name": "GP_LAYER_1_HEADER_END",
+          "offset": "0x5C",
+          "width": 32,
+          "line": 243
+        },
+        {
+          "name": "GP_LAYER_0_STRIDE",
+          "offset": "0x60",
+          "width": 32,
+          "line": 244
+        },
+        {
+          "name": "GP_LAYER_1_STRIDE",
+          "offset": "0x64",
+          "width": 32,
+          "line": 245
+        },
+        {
+          "name": "GP_LAYER_0_POSITION",
+          "offset": "0x68",
+          "width": 32,
+          "line": 246
+        },
+        {
+          "name": "GP_LAYER_1_POSITION",
+          "offset": "0x6C",
+          "width": 32,
+          "line": 247
+        },
+        {
+          "name": "GP_LAYER_0_DIMENSIONS",
+          "offset": "0x70",
+          "width": 32,
+          "line": 248
+        },
+        {
+          "name": "GP_LAYER_1_DIMENSIONS",
+          "offset": "0x74",
+          "width": 32,
+          "line": 249
+        },
+        {
+          "name": "GP_SRC_POSITION",
+          "offset": "0x78",
+          "width": 32,
+          "line": 250
+        },
+        {
+          "name": "GP_DEST_POSITION",
+          "offset": "0x7C",
+          "width": 32,
+          "line": 251
+        },
+        {
+          "name": "GP_DEST_DIMENSIONS",
+          "offset": "0x80",
+          "width": 32,
+          "line": 252
+        },
+        {
+          "name": "GP_SRC_ACTIVE_REGION_0_POSITION",
+          "offset": "0x98",
+          "width": 32,
+          "line": 253
+        },
+        {
+          "name": "GP_SRC_ACTIVE_REGION_1_POSITION",
+          "offset": "0x9C",
+          "width": 32,
+          "line": 254
+        },
+        {
+          "name": "GP_SRC_ACTIVE_REGION_2_POSITION",
+          "offset": "0xA0",
+          "width": 32,
+          "line": 255
+        },
+        {
+          "name": "GP_SRC_ACTIVE_REGION_3_POSITION",
+          "offset": "0xA4",
+          "width": 32,
+          "line": 256
+        },
+        {
+          "name": "GP_SRC_ACTIVE_REGION_0_DIMENSIONS",
+          "offset": "0xA8",
+          "width": 32,
+          "line": 257
+        },
+        {
+          "name": "GP_SRC_ACTIVE_REGION_1_DIMENSIONS",
+          "offset": "0xAC",
+          "width": 32,
+          "line": 258
+        },
+        {
+          "name": "GP_SRC_ACTIVE_REGION_2_DIMENSIONS",
+          "offset": "0xB0",
+          "width": 32,
+          "line": 259
+        },
+        {
+          "name": "GP_SRC_ACTIVE_REGION_3_DIMENSIONS",
+          "offset": "0xB4",
+          "width": 32,
+          "line": 260
+        },
+        {
+          "name": "GP_CRC_DATA",
+          "offset": "0x160",
+          "width": 32,
+          "line": 261
+        },
+        {
+          "name": "GP_DMA_BANDWIDTH_RATE",
+          "offset": "0x170",
+          "width": 32,
+          "line": 262
+        },
+        {
+          "name": "GP_STATUS",
+          "offset": "0x184",
+          "width": 32,
+          "line": 263
+        },
+        {
+          "name": "BLEND_CONFIG",
+          "offset": "0x4",
+          "width": 32,
+          "line": 271
+        },
+        {
+          "name": "BLEND_BG",
+          "offset": "0x8",
+          "width": 32,
+          "line": 272
+        },
+        {
+          "name": "BLEND_LAYER_0_BG",
+          "offset": "0xC",
+          "width": 32,
+          "line": 273
+        },
+        {
+          "name": "BLEND_LAYER_1_BG",
+          "offset": "0x10",
+          "width": 32,
+          "line": 274
+        },
+        {
+          "name": "BLEND_LAYER_0_CONFIG",
+          "offset": "0x14",
+          "width": 32,
+          "line": 275
+        },
+        {
+          "name": "BLEND_LAYER_1_CONFIG",
+          "offset": "0x18",
+          "width": 32,
+          "line": 276
+        },
+        {
+          "name": "BLEND_DEGAMMA_TABLE_R",
+          "offset": "0x1C",
+          "width": 32,
+          "line": 283
+        },
+        {
+          "name": "BLEND_DEGAMMA_TABLE_G",
+          "offset": "0x1024",
+          "width": 32,
+          "line": 284
+        },
+        {
+          "name": "BLEND_DEGAMMA_TABLE_B",
+          "offset": "0x202C",
+          "width": 32,
+          "line": 285
+        },
+        {
+          "name": "BLEND_PIXCAP_CONFIG",
+          "offset": "0x303C",
+          "width": 32,
+          "line": 287
+        }
+      ]
+    },
+    "include/hw/display/apple_displaypipe_v4.h": {
+      "sha256": "c12eed12f7841cbe2b2d237f7804db7a88ce35a295372c8f479285eac61a17b2"
+    },
+    "hw/arm/apple-silicon/dart.c": {
+      "sha256": "889b3cd8192cea8ae7b594ff31443023adc5e50d6e8fdcae112a7f2675446600",
+      "registers": [
+        {
+          "name": "DAPF_CONFIG",
+          "offset": "0x0",
+          "width": 32,
+          "line": 55
+        },
+        {
+          "name": "DAPF_SID",
+          "offset": "0x4",
+          "width": 32,
+          "line": 56
+        },
+        {
+          "name": "DAPF_START_LSB",
+          "offset": "0x8",
+          "width": 32,
+          "line": 57
+        },
+        {
+          "name": "DAPF_START_MSB",
+          "offset": "0xC",
+          "width": 32,
+          "line": 58
+        },
+        {
+          "name": "DAPF_END_LSB",
+          "offset": "0x10",
+          "width": 32,
+          "line": 59
+        },
+        {
+          "name": "DAPF_END_MSB",
+          "offset": "0x14",
+          "width": 32,
+          "line": 60
+        },
+        {
+          "name": "DART_PARAMS1",
+          "offset": "0x0",
+          "width": 32,
+          "line": 63
+        },
+        {
+          "name": "DART_PARAMS2",
+          "offset": "0x4",
+          "width": 32,
+          "line": 66
+        },
+        {
+          "name": "DART_TLB_OP",
+          "offset": "0x20",
+          "width": 32,
+          "line": 70
+        },
+        {
+          "name": "DART_TLB_OP_SET_0_LOW",
+          "offset": "0x34",
+          "width": 32,
+          "line": 78
+        },
+        {
+          "name": "DART_TLB_OP_SET_0_HIGH",
+          "offset": "0x38",
+          "width": 32,
+          "line": 79
+        },
+        {
+          "name": "DART_ERROR_STATUS",
+          "offset": "0x40",
+          "width": 32,
+          "line": 81
+        },
+        {
+          "name": "DART_ERROR_ADDRESS_LOW",
+          "offset": "0x50",
+          "width": 32,
+          "line": 96
+        },
+        {
+          "name": "DART_ERROR_ADDRESS_HIGH",
+          "offset": "0x54",
+          "width": 32,
+          "line": 97
+        },
+        {
+          "name": "DART_CONFIG",
+          "offset": "0x60",
+          "width": 32,
+          "line": 99
+        },
+        {
+          "name": "DART_SID_VALID",
+          "offset": "0xFC",
+          "width": 32,
+          "line": 103
+        },
+        {
+          "name": "DART_PERF_SID_ENABLE_LOW",
+          "offset": "0x1004",
+          "width": 32,
+          "line": 135
+        },
+        {
+          "name": "DART_PERF_SID_ENABLE_HIGH",
+          "offset": "0x1008",
+          "width": 32,
+          "line": 136
+        },
+        {
+          "name": "DART_PERF_STATUS",
+          "offset": "0x100C",
+          "width": 32,
+          "line": 137
+        },
+        {
+          "name": "DART_TLB_MISS_CTR",
+          "offset": "0x1020",
+          "width": 32,
+          "line": 138
+        },
+        {
+          "name": "DART_TLB_HIT_CTR",
+          "offset": "0x1028",
+          "width": 32,
+          "line": 139
+        },
+        {
+          "name": "DART_ST_MISS_CTR",
+          "offset": "0x102C",
+          "width": 32,
+          "line": 140
+        },
+        {
+          "name": "DART_ST_HIT_CTR",
+          "offset": "0x1034",
+          "width": 32,
+          "line": 141
+        }
+      ]
+    },
+    "include/hw/arm/apple-silicon/dart.h": {
+      "sha256": "562bcaaab7718e2a21fa5850349ecb09e1791e9710adb6e4f4135e46733f9226"
+    },
+    "hw/display/apple_scaler.c": {
+      "sha256": "e268ac3e3d27cf6c921a0075f74264623ade5d39acdcda9ec9eb09afab415a7d",
+      "registers": [
+        {
+          "name": "GLBL_VER",
+          "offset": "0x0",
+          "width": 32,
+          "line": 45
+        },
+        {
+          "name": "GLBL_CTRL",
+          "offset": "0x4",
+          "width": 32,
+          "line": 46
+        },
+        {
+          "name": "GLBL_STS",
+          "offset": "0xC",
+          "width": 32,
+          "line": 48
+        },
+        {
+          "name": "GLBL_IRQ_MASK",
+          "offset": "0x1C",
+          "width": 32,
+          "line": 50
+        },
+        {
+          "name": "GLBL_IRQSTS",
+          "offset": "0x20",
+          "width": 32,
+          "line": 51
+        },
+        {
+          "name": "GLBL_FRAMECNT",
+          "offset": "0x24",
+          "width": 32,
+          "line": 52
+        },
+        {
+          "name": "CTRL_COMMAND",
+          "offset": "0x80",
+          "width": 32,
+          "line": 55
+        },
+        {
+          "name": "CTRL_DBG",
+          "offset": "0x9C",
+          "width": 32,
+          "line": 58
+        },
+        {
+          "name": "CTRL_PIXEL_AVERAGING",
+          "offset": "0xE4",
+          "width": 32,
+          "line": 59
+        },
+        {
+          "name": "SRC_CFG",
+          "offset": "0x180",
+          "width": 32,
+          "line": 69
+        },
+        {
+          "name": "SRC_CFG_LUMA_TEXTURE_SIZES",
+          "offset": "0x184",
+          "width": 32,
+          "line": 70
+        },
+        {
+          "name": "SRC_CFG_CHROMA_TEXTURE_SIZES",
+          "offset": "0x188",
+          "width": 32,
+          "line": 71
+        },
+        {
+          "name": "SRC_CFG_LUMA_BASE",
+          "offset": "0x194",
+          "width": 32,
+          "line": 72
+        },
+        {
+          "name": "SRC_CFG_CHROMA_BASE",
+          "offset": "0x198",
+          "width": 32,
+          "line": 73
+        },
+        {
+          "name": "SRC_CFG_LUMA_STRIDE",
+          "offset": "0x1B4",
+          "width": 32,
+          "line": 74
+        },
+        {
+          "name": "SRC_CFG_CHROMA_STRIDE",
+          "offset": "0x1B8",
+          "width": 32,
+          "line": 75
+        },
+        {
+          "name": "SRC_CFG_LUMA_OFFSETS",
+          "offset": "0x1BC",
+          "width": 32,
+          "line": 76
+        },
+        {
+          "name": "SRC_CFG_CHROMA_OFFSETS",
+          "offset": "0x1C0",
+          "width": 32,
+          "line": 77
+        },
+        {
+          "name": "SRC_CFG_SWIZZLE",
+          "offset": "0x1C4",
+          "width": 32,
+          "line": 78
+        },
+        {
+          "name": "SRC_CFG_SIZE",
+          "offset": "0x1C8",
+          "width": 32,
+          "line": 79
+        },
+        {
+          "name": "DST_CFG",
+          "offset": "0x280",
+          "width": 32,
+          "line": 82
+        },
+        {
+          "name": "DST_CFG_LUMA_TEXTURE_SIZES",
+          "offset": "0x284",
+          "width": 32,
+          "line": 83
+        },
+        {
+          "name": "DST_CFG_CHROMA_TEXTURE_SIZES",
+          "offset": "0x288",
+          "width": 32,
+          "line": 84
+        },
+        {
+          "name": "DST_CFG_LUMA_BASE",
+          "offset": "0x294",
+          "width": 32,
+          "line": 85
+        },
+        {
+          "name": "DST_CFG_CHROMA_BASE",
+          "offset": "0x298",
+          "width": 32,
+          "line": 86
+        },
+        {
+          "name": "DST_CFG_LUMA_STRIDE",
+          "offset": "0x2B4",
+          "width": 32,
+          "line": 87
+        },
+        {
+          "name": "DST_CFG_CHROMA_STRIDE",
+          "offset": "0x2B8",
+          "width": 32,
+          "line": 88
+        },
+        {
+          "name": "DST_CFG_LUMA_OFFSETS",
+          "offset": "0x2BC",
+          "width": 32,
+          "line": 89
+        },
+        {
+          "name": "DST_CFG_CHROMA_OFFSETS",
+          "offset": "0x2C0",
+          "width": 32,
+          "line": 90
+        },
+        {
+          "name": "DST_CFG_SWIZZLE",
+          "offset": "0x2C4",
+          "width": 32,
+          "line": 91
+        },
+        {
+          "name": "DST_CFG_SIZE",
+          "offset": "0x2C8",
+          "width": 32,
+          "line": 92
+        },
+        {
+          "name": "FLIP_ROTATE_CFG",
+          "offset": "0x380",
+          "width": 32,
+          "line": 102
+        },
+        {
+          "name": "CSC_CFG_CHROMA_DOWNSAMPLING",
+          "offset": "0x900",
+          "width": 32,
+          "line": 109
+        },
+        {
+          "name": "BORDER_FILL_CFG",
+          "offset": "0x3034",
+          "width": 32,
+          "line": 112
+        },
+        {
+          "name": "BORDER_FILL_CFG_RED_Y",
+          "offset": "0x3038",
+          "width": 32,
+          "line": 113
+        },
+        {
+          "name": "BORDER_FILL_CFG_BLUE_CR",
+          "offset": "0x303C",
+          "width": 32,
+          "line": 114
+        },
+        {
+          "name": "BORDER_FILL_CFG_GREEN_CB",
+          "offset": "0x3040",
+          "width": 32,
+          "line": 115
+        },
+        {
+          "name": "BORDER_FILL_CFG_LUMA_OFFSETS",
+          "offset": "0x3044",
+          "width": 32,
+          "line": 116
+        },
+        {
+          "name": "BORDER_FILL_CFG_CHROMA_OFFSETS",
+          "offset": "0x3048",
+          "width": 32,
+          "line": 119
+        }
+      ]
+    },
+    "hw/display/apple_displaypipe_v2.c": {
+      "sha256": "d797cde9847c91563b2ac1cd9d31884010539b1e2a7629f4752e613ab1a2ced9",
+      "registers": []
+    },
+    "hw/display/meson.build": {
+      "sha256": "bf9067dbc84852d3c9fdc74a4ecf66ad5131f21b2f644c73b069ea10862c6f51"
+    },
+    "hw/arm/apple-silicon/meson.build": {
+      "sha256": "6723f4b170e7ce1ee3fd2c56849777d804065cc1066e19b61a9b129a1998c0ca"
+    },
+    "hw/arm/Kconfig": {
+      "sha256": "567d2f6b7af80eed42f4dfae25de05394a974442af4d7a0dd6f3d9d989ad5a19"
+    },
+    "include/system/dma.h": {
+      "sha256": "14e4c2820bd96a1aac072a0c636ee77be22be00067c3cc0f77612385cf8dd136"
+    },
+    "ui/icons/CKBrandingNotice.md": {
+      "sha256": "59b4c55ef3a27818eba2f79587716385f4be292711607f80974fe8b9f3ea74e2"
+    }
+  },
+  "qtest_files": []
+}

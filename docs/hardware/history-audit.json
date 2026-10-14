@@ -1,0 +1,46 @@
+{
+  "file_comparisons": [
+    {
+      "repo": "den0620__QEMUAppleSilicon",
+      "path": "hw/display/apple_displaypipe_v4.c",
+      "identical_to_baseline": false
+    },
+    {
+      "repo": "den0620__QEMUAppleSilicon",
+      "path": "hw/arm/apple-silicon/dart.c",
+      "identical_to_baseline": false
+    },
+    {
+      "repo": "den0620__QEMUAppleSilicon",
+      "path": "hw/arm/apple-silicon/t8030.c",
+      "identical_to_baseline": false
+    },
+    {
+      "repo": "MakrSas__Inferno",
+      "path": "hw/display/apple_displaypipe_v4.c",
+      "identical_to_baseline": false
+    }
+  ],
+  "display_history": [
+    {
+      "sha": "a6db23ed898c35ce83974182c5033b5b1410b5c0",
+      "message": "refactor: replace usage of g_assert macros with custom ones\n\npart of end goal of removing dependency to the GNOME library"
+    },
+    {
+      "sha": "1bbfac14015d40b822e7fed3e2084a3463fab34c",
+      "message": "refactor: code formatting"
+    },
+    {
+      "sha": "46c4f9fe697f19354ba39e3f4c50d066444e1b4d",
+      "message": "refactor: rewrite GPL-v2-only hw/registerfields.h, also so it doesn't conflict with M*LIB\n\nmostly-mechanical change done with the following commands:\n```sh\nsed -r -i '' 's/( |^)(FIELD)\\(/\\1REG_\\2\\(/g' ./hw/**/*.c\nsed -r -i '' 's/(return | = |  | \\(|\\(\\(|, | \\| |!|[a-z_]\\(| != | && |\\[| \\|= | \\+ | \\/ |^)(FIELD_EX[0-9]+|FIELD_SEX[0-9]+|ARRAY_FIELD_EX[0-9]+|FIELD_DP[0-9]+|FIELD_SDP[0-9]+|ARRAY_FIELD_DP[0-9]+)\\(/\\1REG_\\2\\(/g' ./hw/**/*.c\nsed -r -i '' 's/(  |^)(FIELD)\\(/\\1REG_\\2\\(/g' ./hw/**/*.h ./include/hw/**/*.h\nsed -r -i '' 's/(return | = |  | \\(|\\(\\(|, | \\| |!|[a-z_]\\(| != | && |\\[| \\|= | \\+ | \\/ |^)(FIELD_EX[0-9]+|FIELD_SEX[0-9]+|ARRAY_FIELD_EX[0-9]+|FIELD_DP[0-9]+|FIELD_SDP[0-9]+|ARRAY_FIELD_DP[0-9]+)\\(/\\1REG_\\2\\(/g' ./hw/**/*.h ./include/hw/**/*.h\nsed -r -i '' 's/(  |^)(FIELD)\\(/\\1REG_\\2\\(/g' ./target/**/*.c ./target/**/*.h\nsed -r -i '' 's/(return | = |  | \\(|\\(\\(|, | \\| |!|[a-z_]\\(| != | && |\\[| \\|= | \\+ | \\/ |^)(FIELD_EX[0-9]+|FIELD_SEX[0-9]+|ARRAY_FIELD_EX[0-9]+|FIELD_DP[0-9]+|FIELD_SDP[0-9]+|ARRAY_FIELD_DP[0-9]+)\\(/\\1REG_\\2\\(/g' ./target/**/*.c ./target/**/*.h\nsed -r -i '' 's/(  |^)(FIELD|FIELD_EX[0-9]+|FIELD_SEX[0-9]+|ARRAY_FIELD_EX[0-9]+|FIELD_DP[0-9]+|FIELD_SDP[0-9]+|ARRAY_FIELD_DP[0-9]+)\\(/\\1REG_\\2\\(/g' ./include/fpu/**/*.h\nsed -r -i '' 's/(  |^)SHARED_(FIELD)\\(/\\1SHARED_REG_\\2\\(/g' ./hw/**/*.c\nsed -r -i '' 's/(return | = |  | \\(|\\(\\(|, | \\| |!|[a-z_]\\(| != | && |\\[| \\|= | \\+ | \\/ |^)SHARED_(FIELD_EX[0-9]+|ARRAY_FIELD_EX[0-9]+|FIELD_DP[0-9]+|ARRAY_FIELD_DP[0-9]+)\\(/\\1SHARED_REG_\\2\\(/g' ./hw/**/*.c\nsed -r -i '' 's/(  |^)SHARED_(FIELD)\\(/\\1SHARED_REG_\\2\\(/g' ./hw/**/*.h ./include/hw/**/*.h\nsed -r -i '' 's/(return | = |  | \\(|\\(\\(|, | \\| |!|[a-z_]\\(| != | && |\\[| \\|= | \\+ | \\/ |^)SHARED_(FIELD_EX[0-9]+|ARRAY_FIELD_EX[0-9]+|FIELD_DP[0-9]+|ARRAY_FIELD_DP[0-9]+)\\(/\\1SHARED_REG_\\2\\(/g' ./hw/**/*.h ./include/hw/**/*.h\nsed -r -i '' 's/(  |^)SHARED_(FIELD)\\(/\\1SHARED_REG_\\2\\(/g' ./target/**/*.c ./target/**/*.h\nsed -r -i '' 's/(return | = |  | \\(|\\(\\(|, | \\| |!|[a-z_]\\(| != | && |\\[| \\|= | \\+ | \\/ |^)SHARED_(FIELD_EX[0-9]+|ARRAY_FIELD_EX[0-9]+|FIELD_DP[0-9]+|ARRAY_FIELD_DP[0-9]+)\\(/\\1SHARED_REG_\\2\\(/g' ./target/**/*.c ./target/**/*.h\nsed -r -i '' 's/(  |^)SHARED_(FIELD)\\(/\\1SHARED_REG_\\2\\(/g' ./target/**/*.c.inc\nsed -r -i '' 's/(return | = |  | \\(|\\(\\(|, | \\| |!|[a-z_]\\(| != | && |\\[| \\|= | \\+ | \\/ |^)SHARED_(FIELD_EX[0-9]+|ARRAY_FIELD_EX[0-9]+|FIELD_DP[0-9]+|ARRAY_FIELD_DP[0-9]+)\\(/\\1SHARED_REG_\\2\\(/g' ./target/**/*.c.inc\nsed -r -i '' 's/(  |^)SHARED_(FIELD|FIELD_EX[0-9]+|ARRAY_FIELD_EX[0-9]+|FIELD_DP[0-9]+|ARRAY_FIELD_DP[0-9]+)\\(/\\1SHARED_REG_\\2\\(/g' ./include/fpu/**/*.h\nsed -r -i '' 's/(return | = |  | \\(|\\(\\(|, | \\| |!|[a-z_]\\(| != | && |\\[| \\|= | \\+ | \\/ |^)(FIELD|FIELD_EX[0-9]+|FIELD_SEX[0-9]+|ARRAY_FIELD_EX[0-9]+|FIELD_DP[0-9]+|FIELD_SDP[0-9]+|ARRAY_FIELD_DP[0-9]+)\\(/\\1REG_\\2\\(/g' ./block/**/*.c ./include/block/**/*.h\nsed -r -i '' 's/(  |^)(FIELD)\\(/\\1REG_\\2\\(/g' ./linux-user/**/*.c ./linux-user/**/*.h\nsed -r -i '' 's/(return | = |  | \\(|\\(\\(|, | \\| |!|[a-z_]\\(| != | && |\\[| \\|= | \\+ | \\/ |^)(FIELD_EX[0-9]+|FIELD_SEX[0-9]+|ARRAY_FIELD_EX[0-9]+|FIELD_DP[0-9]+|FIELD_SDP[0-9]+|ARRAY_FIELD_DP[0-9]+)\\(/\\1REG_\\2\\(/g' ./linux-user/**/*.c ./linux-user/**/*.h\n```\nthen the rest done by hand"
+    },
+    {
+      "sha": "08f1b5d97a8641a8ed6324a267d9d382bba8ddc9",
+      "message": "refactor(displaypipe_v4): cache gp's pixman image"
+    },
+    {
+      "sha": "5641521b9e57bb08ac0390f9f08316d690306ffc",
+      "message": "fix(displaypipe_v4): missed an int_status set"
+    }
+  ]
+}
