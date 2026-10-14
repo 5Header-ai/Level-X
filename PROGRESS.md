@@ -39,3 +39,16 @@
 - Коммиты ранее: baseline `2bce81ab11947d071f2f8768de012267a98adcc8`,
   C-модуль `0f4d944d78962b5b455333c2f6ae0cbaabb7c92f`.
 - Коммит этапа: `docs: audit pinned graphics sources and define protocol boundaries`.
+
+## Этап 3 — интеграционные patches и проверка переноса
+
+- Реализованы: opt-in QOM flag, адаптер к прежнему DART AddressSpace и три trace events.
+- Patch commits относительно upstream: `c45f2f5d5fbdc2e707ebdf227177fd9baa4cd3f9`
+  и `9278a7d8e5d42a4d52d154ec25bf0368516347e0`.
+- Проверено: clean git am/apply, exact standalone-source identity, whitelist
+  5 путей, whitespace, обратное применение. `reports/transfer.json` — PASS.
+- Штатный trace generator принял события. QEMU build и guest runtime — NOT RUN.
+- Добавлены INTEGRATION.md, patches/inferno, tests/integration/verify_transfer.py,
+  tests/qtest/README.md, reports/transfer.json.
+- Интегрировать можно для review/build в отдельной копии; production merge не выполнен.
+- Коммит этапа: `feat: package opt-in Inferno patches and verify transfer and rollback`.

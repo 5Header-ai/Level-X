@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "baseline": "cc4302a99167abec69b714cfd00c38caece7e7de",
+  "patches": [
+    {
+      "patch": "0001-display-add-opt-in-checked-scanout-adapter-for-Level.patch",
+      "sha256": "8ef774e64f4d717422d16ca1aae07ca08a50c2f8567ecf37e46309541201a077",
+      "status": "PASS"
+    },
+    {
+      "patch": "0002-display-trace-DisplayPipe-MMIO-and-checked-DMA-outco.patch",
+      "sha256": "f869129a36adac9dd62534af2555afaf6ecb414c90f9afc79ca221edef00dfb2",
+      "status": "PASS"
+    }
+  ],
+  "changed_files": [
+    "hw/display/apple_displaypipe_v4.c",
+    "hw/display/levelx_scanout.c",
+    "hw/display/levelx_scanout.h",
+    "hw/display/meson.build",
+    "hw/display/trace-events"
+  ],
+  "source_identity": "PASS",
+  "rollback": "PASS",
+  "qemu_build": "NOT RUN",
+  "qtest": "NOT RUN",
+  "ios": "NOT RUN"
+}

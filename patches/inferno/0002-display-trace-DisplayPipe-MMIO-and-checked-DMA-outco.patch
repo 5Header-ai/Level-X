@@ -1,0 +1,79 @@
+From 9278a7d8e5d42a4d52d154ec25bf0368516347e0 Mon Sep 17 00:00:00 2001
+From: Level X GPU Development <levelx-gpu@localhost>
+Date: Wed, 14 Oct 2026 21:26:56 +0300
+Subject: [PATCH 2/2] display: trace DisplayPipe MMIO and checked DMA outcomes
+
+---
+ hw/display/apple_displaypipe_v4.c | 14 +++++++++++++-
+ hw/display/trace-events           |  5 +++++
+ 2 files changed, 18 insertions(+), 1 deletion(-)
+
+diff --git a/hw/display/apple_displaypipe_v4.c b/hw/display/apple_displaypipe_v4.c
+index 492a5d7..3eea1a0 100644
+--- a/hw/display/apple_displaypipe_v4.c
++++ b/hw/display/apple_displaypipe_v4.c
+@@ -30,6 +30,7 @@
+ #include "system/dma.h"
+ #include "ui/console.h"
+ #include "levelx_scanout.h"
++#include "trace.h"
+ 
+ #ifdef CONFIG_PIXMAN
+ #include "pixman.h"
+@@ -356,6 +357,8 @@ static void adp_v4_gp_read_checked(ADPV4GenPipe *genpipe, AddressSpace *dma_as)
+      * exclusive fence. Bounds come from layout, a host cap, and QEMU DART. */
+     status = lxg_snapshot_read(&snapshot, &layout, &limits, &allocator,
+                                 adp_v4_levelx_dma_read, dma_as);
++    trace_levelx_adp_scanout(genpipe->index, layout.iova, layout.width,
++                             layout.height, layout.stride, (int)status);
+     if (status != LXG_OK) {
+         qemu_log_mask(LOG_GUEST_ERROR, "levelx: gp%d scanout rejected: %s\n",
+                       genpipe->index, lxg_status_string(status));
+@@ -598,6 +601,8 @@ static void adp_v4_reg_write(void *opaque, hwaddr addr, uint64_t data,
+ {
+     AppleDisplayPipeV4State *adp = opaque;
+ 
++    trace_levelx_adp_mmio_write(addr, data, size);
++
+     if (addr >= 0x200000) { // some weird shadow shit
+         addr -= 0x200000;
+     }
+@@ -646,7 +651,7 @@ static void adp_v4_reg_write(void *opaque, hwaddr addr, uint64_t data,
+     }
+ }
+ 
+-static uint64_t adp_v4_reg_read(void *const opaque, hwaddr addr, unsigned size)
++static uint64_t adp_v4_reg_read_impl(void *const opaque, hwaddr addr, unsigned size)
+ {
+     AppleDisplayPipeV4State *adp = opaque;
+ 
+@@ -694,6 +699,13 @@ static uint64_t adp_v4_reg_read(void *const opaque, hwaddr addr, unsigned size)
+     }
+ }
+ 
++static uint64_t adp_v4_reg_read(void *opaque, hwaddr addr, unsigned size)
++{
++    uint64_t value = adp_v4_reg_read_impl(opaque, addr, size);
++    trace_levelx_adp_mmio_read(addr, value, size);
++    return value;
++}
++
+ static const MemoryRegionOps adp_v4_reg_ops = {
+     .write = adp_v4_reg_write,
+     .read = adp_v4_reg_read,
+diff --git a/hw/display/trace-events b/hw/display/trace-events
+index 52786e6..5fa2ec4 100644
+--- a/hw/display/trace-events
++++ b/hw/display/trace-events
+@@ -224,3 +224,8 @@ apple_gfx_iosfc_unmap_memory(void *a, void *b, void *c, void *d, void *e, void *
+ apple_gfx_iosfc_unmap_memory_region(void* mem, void *region) "unmapping @ %p from memory region %p"
+ apple_gfx_iosfc_raise_irq(uint32_t vector) "vector=0x%x"
+ 
++
++# Level X preliminary DisplayPipe diagnostics (no AGX protocol assumed)
++levelx_adp_mmio_read(uint64_t addr, uint64_t value, unsigned size) "addr=0x%" PRIx64 " value=0x%" PRIx64 " size=%u"
++levelx_adp_mmio_write(uint64_t addr, uint64_t value, unsigned size) "addr=0x%" PRIx64 " value=0x%" PRIx64 " size=%u"
++levelx_adp_scanout(unsigned pipe, uint64_t iova, unsigned width, unsigned height, unsigned stride, int status) "pipe=%u iova=0x%" PRIx64 " width=%u height=%u stride=%u status=%d"
+-- 
+2.55.0.windows.5
+
