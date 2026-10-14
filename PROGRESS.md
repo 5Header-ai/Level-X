@@ -52,3 +52,13 @@
   tests/qtest/README.md, reports/transfer.json.
 - Интегрировать можно для review/build в отдельной копии; production merge не выполнен.
 - Коммит этапа: `feat: package opt-in Inferno patches and verify transfer and rollback`.
+
+## Этап 4 — собственная гостевая диагностика
+
+- Добавлено `tests/integration/ios`: UIKit приложение, Metal compute (256 точных
+  uint результатов), render clear + texture readback (64 pixels), JSON отчёт.
+- Не подменяет Metal CPU-вычислением; CPU только проверяет ожидаемые значения.
+- Проверены plist и shell syntax. Xcode compile, iPhone и VM: NOT RUN.
+- Timeout ожидания command completion 10 секунд; отмена GPU work не обещается.
+- Коммит этапа: `test: add native iOS Metal compute and render readback probe`.
+- Дальше: база reuse-кандидатов, попытка полной сборки Inferno, manifest и export.
