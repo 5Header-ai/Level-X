@@ -7,6 +7,8 @@
 исходный checkout. Формат binary simpletrace меняется между версиями QEMU.
 
 При конфигурации добавьте `--enable-trace-backends=log,simple`. Патчи 1 и 2 нужны.
+В каталоге сборки выполните `ninja trace/trace-events-all`: при сборке только EXE
+этот отдельный target может не создаваться автоматически.
 Создайте файл `levelx-events`:
 
 ```text
@@ -26,7 +28,7 @@ levelx_adp_scanout
 
 ```sh
 python tools/analyze_trace.py --inferno /path/to/Inferno \
-  --events /path/to/build/trace-events-all --trace levelx-trace.bin \
+  --events /path/to/build/trace/trace-events-all --trace levelx-trace.bin \
   --output reports/local-trace.json
 ```
 

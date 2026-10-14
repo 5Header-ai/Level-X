@@ -146,6 +146,9 @@ cd levelx-iphone-gpu-engine
 git switch feature/levelx-gpu
 ```
 
-Bundle содержит всю нашу историю, main и feature/levelx-gpu; отдельный upstream
+Bundle содержит всю нашу историю, main, feature/levelx-gpu и исходную локальную
+историю archive/local-development. API-публикация сохранила деревья файлов, но
+создала новые commit IDs; связь записана в Original-local-commit trailers.
+Отдельный upstream
 Inferno clone получается по указанному URL/SHA. Основная команда выполняет merge
 только после своей сборки, тестов и ревью.

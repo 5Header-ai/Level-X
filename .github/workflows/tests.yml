@@ -1,0 +1,33 @@
+name: Standalone and transfer checks
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    defaults:
+      run:
+        shell: pwsh
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4, pinned 2026-10-14
+        with:
+          persist-credentials: false
+      - name: Compile and run C tests with MSVC
+        run: python tools/test.py --report build/unit.json
+      - name: AddressSanitizer
+        run: python tools/test.py --sanitize --report build/asan.json
+      - name: Fetch exact public Inferno baseline
+        run: |
+          git init "$env:RUNNER_TEMP/inferno"
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          git -C "$env:RUNNER_TEMP/inferno" remote add origin https://github.com/ChefKissInc/Inferno.git
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          git -C "$env:RUNNER_TEMP/inferno" -c core.autocrlf=false fetch --depth 1 origin cc4302a99167abec69b714cfd00c38caece7e7de
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          git -C "$env:RUNNER_TEMP/inferno" -c core.autocrlf=false checkout --detach FETCH_HEAD
+          exit $LASTEXITCODE
+      - name: Apply and reverse patches, verify source identity
+        run: python tests/integration/verify_transfer.py "$env:RUNNER_TEMP/inferno" --report build/transfer.json
+      - name: Test QEMU trace reader integration
+        run: python tests/integration/test_trace_reader.py "$env:RUNNER_TEMP/inferno" --report build/trace-reader.json

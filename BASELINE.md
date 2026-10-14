@@ -53,7 +53,8 @@ DMA уже направляется через DART address space. Публич�
 `MakrSas/Inferno` ориентирован на запуск внутри iPhone-приложения;
 `reims-vgpu` в orchard-ios относится к apple-vm/macOS, а не к A13/iOS AGX.
 Сравнение pinned исходников и область применимости зафиксированы в
-`docs/hardware/source-audit.md`. Копирование сторонних backend не планируется.
+`docs/hardware/source-audit.md`. Дальнейшие reuse-кандидаты и условия адаптации:
+`REUSABLE-TECHNOLOGIES.md`; импорт backend пока не выбран.
 
 Перед переносом на Level X нужны точный commit, source-only локальные изменения,
 конфигурация сборки и сравнение этих интерфейсов. Применение патча к указанному

@@ -92,3 +92,18 @@
   qemu-registration.json, docs/experiments/windows-build.md,
   tests/integration/test_qemu_registration.py. Обновлена текущая матрица готовности.
 - Коммит этапа: `build: compile patched Inferno on Windows and verify CLI registration`.
+
+## Этап 7 — воспроизводимая передача
+
+- Добавлены integration manifest с SHA-256 исходников/патчей, acceptance checklist,
+  отдельный test plan и проверка целостности tools/verify_manifest.py.
+- Подготовлены Windows GitHub Actions для MSVC/ASan, переноса патчей и trace reader.
+  Фактический результат запуска CI фиксируется отдельно; это не тест гостя.
+- tools/export_release.py создаёт source ZIP и полный Git bundle, проверяет
+  bundle verify, восстановление feature HEAD и git fsck в временной копии.
+- Публикация через GitHub API обходит сбой локального HTTPS transport. Каждый
+  этап сохраняется отдельным commit, tree SHA сравнивается с локальным;
+  исходная история сохраняется в archive/local-development и bundle.
+- Полный A13 GPU/Metal остаётся незавершённым. Для следующей аппаратной проверки
+  нужны актуальный source-only baseline Level X и отдельный iOS test fixture.
+- Коммит этапа: `chore: add reproducible handover manifest and CI checks`.

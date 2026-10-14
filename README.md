@@ -36,7 +36,7 @@ GitHub Actions workflow подготовлен; фактическое испо�
 
 ## Передача
 
-Рабочая ветка: `feature/levelx-gpu`; `main` фиксирует начальный baseline.
+Рабочая ветка: `feature/levelx-gpu`; `main` содержит стартовую страницу проекта.
 История полная для **этого независимого репозитория**. Это не fork
 с полной историей QEMU. Патчи в `patches/inferno/` построены относительно точного
 upstream SHA, поэтому историю upstream переносить искусственно не требуется.
@@ -47,7 +47,7 @@ upstream SHA, поэтому историю upstream переносить иск
 движок не выполнялось. Репозиторий: [5Header-ai/Level-X](https://github.com/5Header-ai/Level-X).
 Из-за сбоя локального Git HTTPS transport публикация выполняется через GitHub API:
 логические этапы сохраняются отдельными commits, original tree SHA проверяется.
-Original local commits сохраняются отдельно в Git bundle; remote commits имеют
+Original local commits сохраняются в ветке `archive/local-development` в Git bundle; remote commits имеют
 новые IDs и trailer `Original-local-commit`. Основная команда принимает изменения
 через review; merge в production не выполняется.
 
