@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "tests": 5,
+  "failures": 0,
+  "errors": 0,
+  "scope": "synthetic binary traces parsed by real Inferno simpletrace; no guest execution"
+}

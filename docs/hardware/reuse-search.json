@@ -1,0 +1,505 @@
+{
+  "date": "2026-10-14",
+  "repositories": [
+    {
+      "repository": "AsahiLinux/m1n1",
+      "sha": "94395adce7e6f7bf781a072edb8e6e042b71f9d7",
+      "files": {
+        "LICENSE": "edaef632cbb643e4e7a221717a6c441a4c1a7c918e6e4d56debc3d8739b233f6",
+        "README.md": "8a511740649191deef65929adadfc3b7f3dd42784c8e8bc0bd5cfe314fe70329",
+        "proxyclient/m1n1/agx/__init__.py": "a70bf9caaf37097af744e2ccbdf3b437e5118c810d0ec2d3dea2c56cbf201c65",
+        "proxyclient/m1n1/agx/render.py": "ccad83ba810aff98d16be1ac85923e293c8d9f680fcd9e2e27c789bf93f8f7a8",
+        "proxyclient/m1n1/fw/agx/cmdqueue.py": "0cd79ccebab1fa6293096c5bc96dfe701607125d810ed51f88b03b06bcfc6e76",
+        "proxyclient/m1n1/fw/agx/initdata.py": "e9859a76e9397f01aedc43b8627cabd7f80a35f00e34f990673f3e21e8ea99f9",
+        "proxyclient/m1n1/hw/agx.py": "eee9a9cbb283d5e99e216d9074b4ab6e2a60d6891c665abfe1b98dea6f0a3d91",
+        "proxyclient/m1n1/hw/uat.py": "4a4d0300cd3a4ed4fb3de250866993b0d1e00ec3249f93077a871e69c94f0838"
+      },
+      "truncated": false
+    },
+    {
+      "repository": "steelbrain/reims-vgpu",
+      "sha": "86d492197228df29514a87c3de62b2ce59f2188f",
+      "files": {
+        "Cargo.toml": "d421f2644a7a78dd034be6665a006d62c164e6aa1e02d1730b2473d7e0b51a28",
+        "LICENSE": "4242f42ba3f62bb248a5f5e189992149f042eae9bdc618079240979ae2d7238a",
+        "README.md": "56c40d9dbe867d95c1c0f4b33004f62cb8d2ffdebd025435d4dc9f6fa41f2e8c",
+        "crates/reims-vgpu-c/include/reims_vgpu.h": "acbb6670f1fd6efa2e02210afd19f3e8ccf0794eed0509d18c4629f7ce97d31c",
+        "crates/reims-vgpu-vulkan/Cargo.toml": "00cebb38be7da2ba878995d74cc0a1876ac4cf07a2cf142ebf94e68436b3230a",
+        "docs/api.md": "63a58e1e2c799560d6b7bf1838d6e58e061207eb1ba35b0b6bd627335f8e29da",
+        "docs/qemu.md": "9a93f5a4168bdec6c8ba9d738916bc9d6bdb48e25150e9dfd9b716b96af98d92",
+        "crates/reims-vgpu-core/src/memory/page_table.rs": "6fc2dbbc8d7e5ac8af2ba11da17fb92a947c75ab34788c10cbb33c5952f45e52",
+        "crates/reims-vgpu-core/src/memory/mapping.rs": "0bde2e9996264d80e75f147edbcfd23e20f715305589e86575fce71b45b4020b",
+        "crates/reims-vgpu-core/tests/memory_compose.rs": "9b74824c8784346dbca97ef629c2b1161a166c719f2ea943d5111b422546c4b0"
+      },
+      "truncated": false
+    },
+    {
+      "repository": "medfa12/apple-silicon-anyos-project",
+      "sha": "59fd73aac4ae386939bc69dc58dffbce1b2167b2",
+      "files": {
+        "LICENSE": "edaef632cbb643e4e7a221717a6c441a4c1a7c918e6e4d56debc3d8739b233f6",
+        "README.md": "71915ce3f60669fc36404ce400e31e8aed0fa823fcbe5e4a96fcf6561cfee466",
+        "vendor/metal2vulkan/examples/translate_native.rs": "76ef50a62e678c722201a4983996db92037666e4ea9901a7f6164103a58b87d4",
+        "vendor/metal2vulkan/src/as_shadow.rs": "1d259e513c959b8289c08c80d2b46607cca9c550f1cada2b8428a0f7de31a9ad",
+        "vendor/metal2vulkan/src/emit_sidecar.rs": "804d7d070a9bc74d2eccfe680d840dd6f4b19b1e93260aa3876f56396f0ad1fd",
+        "vendor/metal2vulkan/src/env_vars.rs": "5fdf4b08890cf4ff2f5246745cbfc03a57888720a1b3ea07dfb14ac3a424f758"
+      },
+      "truncated": false
+    },
+    {
+      "repository": "https://gitlab.freedesktop.org/mesa/mesa",
+      "sha": "8b07f64a383f19c7002a4e97f422bbd01e9d4f54",
+      "files": {
+        "src/asahi/lib/decode.c": "9dd8acb0b79e48cd936e06aadbb414ca177149b1863903f61df374dce87b6f9f",
+        "src/asahi/lib/agx_bo.h": "ba614fede9f1e229be25397b399e88d954b069450740c33b02524686a96896d7",
+        "src/asahi/lib/agx_device.h": "e6ba76e16b2aace0ebf8b1ff2348cb800ad6cc254cef633d490de5bc203bfda3",
+        "docs/license.rst": "0d1a0472ecc81830e75c20d59b0ea02841e3db21255e0ebad97ab682c54d6615"
+      },
+      "errors": {}
+    },
+    {
+      "repository": "https://gitlab.freedesktop.org/pixman/pixman",
+      "sha": "f227dcbe57e8fcfb5174ffd7eb55a69b6692d512",
+      "files": {
+        "pixman/pixman-bits-image.c": "b30c3a7d6f1cb1514b1f1a1481c4aaf9dd0bd9aea7ca226517fa1b4c90185209",
+        "COPYING": "fac9270f0987b96ff4533fca3548c633e02083cbba4a0172a3b149b2e4019793"
+      },
+      "errors": {}
+    },
+    {
+      "repository": "steelbrain/metal2vulkan",
+      "sha": "ecb80e019d54b8eb1585974fb2a6cc37bac359cc",
+      "files": {
+        "LICENSE": "672ded943eeab6d5fdb81c68fd3cf4e2a10fc324dc52c23feb8dded444b9207b",
+        "Cargo.toml": "2cfb7ff0fe5bb20e0a1e2b342df42580221911bc2e9a6a171c9cb2ef1ee14f2d",
+        "crates/metal2vulkan/src/lib.rs": "56ad4bd0ac4cbcf630a953b051a286bbc2ae946b870a202b2fb092b05be60f8d",
+        "crates/metal2vulkan-runtime/src/lib.rs": "57add1d765b89331ac4bca580e155f4e629a5881314adf40dcbecf76561c8a55"
+      }
+    }
+  ],
+  "searches": [
+    {
+      "query": "repo:ChefKissInc/Inferno GPU",
+      "total_count": 12,
+      "items": [
+        {
+          "url": "https://github.com/ChefKissInc/Inferno/issues/274",
+          "title": "AGX/SGX GPU emulation",
+          "state": "open",
+          "updated_at": "2026-07-11T11:39:40Z"
+        },
+        {
+          "url": "https://github.com/ChefKissInc/Inferno/issues/316",
+          "title": "GPU acceleration for guest macOS arm64",
+          "state": "closed",
+          "updated_at": "2026-09-15T12:11:25Z"
+        },
+        {
+          "url": "https://github.com/ChefKissInc/Inferno/issues/297",
+          "title": "Build fails on latest Arch",
+          "state": "closed",
+          "updated_at": "2026-06-14T17:21:42Z"
+        },
+        {
+          "url": "https://github.com/ChefKissInc/Inferno/issues/241",
+          "title": "iOS 18 support",
+          "state": "closed",
+          "updated_at": "2026-02-11T09:12:02Z"
+        },
+        {
+          "url": "https://github.com/ChefKissInc/Inferno/issues/142",
+          "title": "White screen on safari",
+          "state": "closed",
+          "updated_at": "2025-12-20T11:12:20Z"
+        },
+        {
+          "url": "https://github.com/ChefKissInc/Inferno/issues/88",
+          "title": "GPU Acceleration support?",
+          "state": "closed",
+          "updated_at": "2025-06-23T11:42:50Z"
+        },
+        {
+          "url": "https://github.com/ChefKissInc/Inferno/issues/26",
+          "title": "Main OS gets stuck in data migration",
+          "state": "closed",
+          "updated_at": "2025-06-13T21:58:54Z"
+        },
+        {
+          "url": "https://github.com/ChefKissInc/Inferno/issues/184",
+          "title": "Error NVMe interBad ram pointer 0x200",
+          "state": "closed",
+          "updated_at": "2025-08-17T10:51:32Z"
+        },
+        {
+          "url": "https://github.com/ChefKissInc/Inferno/issues/156",
+          "title": "failure to connect with virtual device from companion VM",
+          "state": "closed",
+          "updated_at": "2025-07-14T17:31:53Z"
+        },
+        {
+          "url": "https://github.com/ChefKissInc/Inferno/issues/173",
+          "title": "[Ubuntu 22.04] `undefined reference to symbol 'module_load'` when Compiling QEMU",
+          "state": "closed",
+          "updated_at": "2025-07-25T15:37:53Z"
+        },
+        {
+          "url": "https://github.com/ChefKissInc/Inferno/issues/180",
+          "title": "Make returns error",
+          "state": "closed",
+          "updated_at": "2025-08-12T11:34:54Z"
+        },
+        {
+          "url": "https://github.com/ChefKissInc/Inferno/issues/60",
+          "title": "Cannot connect the device to the qemu vm",
+          "state": "closed",
+          "updated_at": "2025-06-12T11:42:50Z"
+        }
+      ]
+    },
+    {
+      "query": "repo:ChefKissInc/Inferno DART",
+      "total_count": 8,
+      "items": [
+        {
+          "url": "https://github.com/ChefKissInc/Inferno/issues/207",
+          "title": "Implementation of s8000 DART",
+          "state": "open",
+          "updated_at": "2026-10-11T00:21:33Z"
+        },
+        {
+          "url": "https://github.com/ChefKissInc/Inferno/issues/243",
+          "title": "Implement DART Dynamic Stream ID Assignment",
+          "state": "open",
+          "updated_at": "2026-10-11T00:15:35Z"
+        },
+        {
+          "url": "https://github.com/ChefKissInc/Inferno/issues/81",
+          "title": "panic dart-sep",
+          "state": "closed",
+          "updated_at": "2025-06-14T17:18:11Z"
+        },
+        {
+          "url": "https://github.com/ChefKissInc/Inferno/issues/173",
+          "title": "[Ubuntu 22.04] `undefined reference to symbol 'module_load'` when Compiling QEMU",
+          "state": "closed",
+          "updated_at": "2025-07-25T15:37:53Z"
+        },
+        {
+          "url": "https://github.com/ChefKissInc/Inferno/issues/139",
+          "title": "Run on Mac os M1 MAX failed . log: wdog panic (attempt 1)",
+          "state": "closed",
+          "updated_at": "2025-07-08T10:54:54Z"
+        },
+        {
+          "url": "https://github.com/ChefKissInc/Inferno/issues/255",
+          "title": "won't start restore",
+          "state": "closed",
+          "updated_at": "2026-02-24T18:43:07Z"
+        },
+        {
+          "url": "https://github.com/ChefKissInc/Inferno/pull/3",
+          "title": "Fix display being blank",
+          "state": "closed",
+          "updated_at": "2023-07-10T22:23:45Z"
+        },
+        {
+          "url": "https://github.com/ChefKissInc/Inferno/pull/2",
+          "title": "Some graphics fixes and something unrelated",
+          "state": "closed",
+          "updated_at": "2023-07-10T18:26:35Z"
+        }
+      ]
+    },
+    {
+      "query": "repo:ChefKissInc/Inferno DisplayPipe",
+      "total_count": 2,
+      "items": [
+        {
+          "url": "https://github.com/ChefKissInc/Inferno/issues/244",
+          "title": "macos version broken",
+          "state": "closed",
+          "updated_at": "2026-01-25T22:43:35Z"
+        },
+        {
+          "url": "https://github.com/ChefKissInc/Inferno/issues/21",
+          "title": "bzero unavailable on Windows platforms",
+          "state": "closed",
+          "updated_at": "2024-12-11T11:17:45Z"
+        }
+      ]
+    },
+    {
+      "query": "repo:steelbrain/reims-vgpu is:pr is:open",
+      "total_count": 34,
+      "items": [
+        {
+          "url": "https://github.com/steelbrain/reims-vgpu/pull/123",
+          "title": "window: full screen on Ctrl+Alt+Enter, following the window system's state",
+          "state": "open",
+          "updated_at": "2026-10-11T16:29:13Z"
+        },
+        {
+          "url": "https://github.com/steelbrain/reims-vgpu/pull/122",
+          "title": "window: show the last frame again after a resize instead of slate",
+          "state": "open",
+          "updated_at": "2026-10-11T16:27:55Z"
+        },
+        {
+          "url": "https://github.com/steelbrain/reims-vgpu/pull/121",
+          "title": "guest-ram: fall back to copying when the driver refuses the RAMBlock import",
+          "state": "open",
+          "updated_at": "2026-10-12T05:12:35Z"
+        },
+        {
+          "url": "https://github.com/steelbrain/reims-vgpu/pull/119",
+          "title": "host-window: ignore synthetic key presses on focus gain",
+          "state": "open",
+          "updated_at": "2026-10-07T09:15:15Z"
+        },
+        {
+          "url": "https://github.com/steelbrain/reims-vgpu/pull/117",
+          "title": "drain: a position stranded by a pipeline's end completes instead of parking forever",
+          "state": "open",
+          "updated_at": "2026-10-06T04:25:43Z"
+        },
+        {
+          "url": "https://github.com/steelbrain/reims-vgpu/pull/116",
+          "title": "vulkan: a translation still running is not a pipeline that cannot be built",
+          "state": "open",
+          "updated_at": "2026-10-06T04:25:54Z"
+        },
+        {
+          "url": "https://github.com/steelbrain/reims-vgpu/pull/115",
+          "title": "host-window: refuse the start when the event loop cannot be built",
+          "state": "open",
+          "updated_at": "2026-10-06T03:14:33Z"
+        },
+        {
+          "url": "https://github.com/steelbrain/reims-vgpu/pull/114",
+          "title": "boot-x86.sh: default WAYLAND_DISPLAY/DISPLAY only when the socket exists",
+          "state": "open",
+          "updated_at": "2026-10-06T02:53:04Z"
+        },
+        {
+          "url": "https://github.com/steelbrain/reims-vgpu/pull/110",
+          "title": "feat(drain): hold doorbell work until the shim's harvests settle (ABI v21)",
+          "state": "open",
+          "updated_at": "2026-09-28T20:47:27Z"
+        },
+        {
+          "url": "https://github.com/steelbrain/reims-vgpu/pull/109",
+          "title": "fix(writeback): write presented framebuffers back at DisplaySwap once the guest copies between them",
+          "state": "open",
+          "updated_at": "2026-09-28T17:43:59Z"
+        },
+        {
+          "url": "https://github.com/steelbrain/reims-vgpu/pull/108",
+          "title": "perf(vulkan): lay guest CPU writes over a live resident on the GPU instead of a whole-frame merge",
+          "state": "open",
+          "updated_at": "2026-09-28T16:42:47Z"
+        },
+        {
+          "url": "https://github.com/steelbrain/reims-vgpu/pull/107",
+          "title": "perf(sampled): consume the resident merge's readback in place",
+          "state": "open",
+          "updated_at": "2026-09-28T15:39:18Z"
+        },
+        {
+          "url": "https://github.com/steelbrain/reims-vgpu/pull/106",
+          "title": "feat(import): narrow GPU writes through the guest-RAM import, and name the class that panics (#70/#71/#100)",
+          "state": "open",
+          "updated_at": "2026-09-28T14:52:27Z"
+        },
+        {
+          "url": "https://github.com/steelbrain/reims-vgpu/pull/105",
+          "title": "fix(vulkan): retire finished window presents on the maintenance tick",
+          "state": "open",
+          "updated_at": "2026-09-28T13:06:36Z"
+        },
+        {
+          "url": "https://github.com/steelbrain/reims-vgpu/pull/104",
+          "title": "Formats this device could not carry, and declines that could not say why",
+          "state": "open",
+          "updated_at": "2026-09-30T09:57:18Z"
+        },
+        {
+          "url": "https://github.com/steelbrain/reims-vgpu/pull/103",
+          "title": "Pay for the bind registry's shape only when the levels line reports it",
+          "state": "open",
+          "updated_at": "2026-09-30T09:56:28Z"
+        },
+        {
+          "url": "https://github.com/steelbrain/reims-vgpu/pull/102",
+          "title": "Keep a wide render target's own texel through the Store and the LOAD seed",
+          "state": "open",
+          "updated_at": "2026-09-30T09:56:26Z"
+        },
+        {
+          "url": "https://github.com/steelbrain/reims-vgpu/pull/99",
+          "title": "Host window: acquire with a 2 ms timeout so NVIDIA/Wayland releases images (fixes #30)",
+          "state": "open",
+          "updated_at": "2026-09-24T04:52:37Z"
+        },
+        {
+          "url": "https://github.com/steelbrain/reims-vgpu/pull/97",
+          "title": "Fix Vulkan staging offset corruption in first materialization",
+          "state": "open",
+          "updated_at": "2026-09-23T21:56:15Z"
+        },
+        {
+          "url": "https://github.com/steelbrain/reims-vgpu/pull/95",
+          "title": "fix(protocol): RGB10A2Unorm is a colour render target",
+          "state": "open",
+          "updated_at": "2026-09-21T12:20:22Z"
+        }
+      ]
+    },
+    {
+      "query": "repo:steelbrain/reims-vgpu is:issue Windows",
+      "total_count": 14,
+      "items": [
+        {
+          "url": "https://github.com/steelbrain/reims-vgpu/issues/71",
+          "title": "Windows/WHPX: guest panics with AppleParavirtPageTable.cpp:210 assertion during GPU memory release",
+          "state": "open",
+          "updated_at": "2026-09-28T14:52:45Z"
+        },
+        {
+          "url": "https://github.com/steelbrain/reims-vgpu/issues/86",
+          "title": "Windows/WSL2 usage report: macOS 13.7.8 with AMD 680M + Dozen (Metal 2 working)",
+          "state": "open",
+          "updated_at": "2026-09-19T00:23:00Z"
+        },
+        {
+          "url": "https://github.com/steelbrain/reims-vgpu/issues/32",
+          "title": "WSL2/WSLg + Mesa Dozen (dzn): REIMS_VGPU_WINDOW=1 SIGSEGV in vkCreateDevice (NVIDIA D3D12); vulkaninfo also crashes",
+          "state": "open",
+          "updated_at": "2026-08-08T20:08:58Z"
+        },
+        {
+          "url": "https://github.com/steelbrain/reims-vgpu/issues/70",
+          "title": "Tahoe doesn't boot with guest memory import",
+          "state": "open",
+          "updated_at": "2026-10-09T17:43:07Z"
+        },
+        {
+          "url": "https://github.com/steelbrain/reims-vgpu/issues/120",
+          "title": "Intel Iris Xe / WSL2 Dozen: pixel-coordinate sampling produces one valid pixel; local normalization workaround restores Ventura desktop",
+          "state": "open",
+          "updated_at": "2026-10-14T04:58:55Z"
+        },
+        {
+          "url": "https://github.com/steelbrain/reims-vgpu/issues/17",
+          "title": "Support Windows",
+          "state": "closed",
+          "updated_at": "2026-08-31T11:54:57Z"
+        },
+        {
+          "url": "https://github.com/steelbrain/reims-vgpu/issues/118",
+          "title": "arm64 macOS 27 guest: display transaction not decoded (display_txn_payload_overlong op=0x8, mapper_capture_request_type_mismatch)",
+          "state": "open",
+          "updated_at": "2026-10-06T20:14:08Z"
+        },
+        {
+          "url": "https://github.com/steelbrain/reims-vgpu/issues/90",
+          "title": "macOS Tahoe 26: persistent tiled/white corruption on Linux x86 Vulkan path",
+          "state": "open",
+          "updated_at": "2026-09-16T17:24:13Z"
+        },
+        {
+          "url": "https://github.com/steelbrain/reims-vgpu/issues/31",
+          "title": "usb-audio underruns correlate with guest GPU activity (dirty-log sync under BQL?)",
+          "state": "open",
+          "updated_at": "2026-08-31T11:57:15Z"
+        },
+        {
+          "url": "https://github.com/steelbrain/reims-vgpu/issues/12",
+          "title": "Testing Thread - bzai56",
+          "state": "closed",
+          "updated_at": "2026-08-31T11:56:40Z"
+        },
+        {
+          "url": "https://github.com/steelbrain/reims-vgpu/issues/7",
+          "title": "even on the latest stability fixes, many many issues",
+          "state": "closed",
+          "updated_at": "2026-07-28T16:13:08Z"
+        },
+        {
+          "url": "https://github.com/steelbrain/reims-vgpu/issues/11",
+          "title": "The latest rendering fix commit\uff087502518\uff09 is now barely usable.",
+          "state": "closed",
+          "updated_at": "2026-08-04T22:54:12Z"
+        },
+        {
+          "url": "https://github.com/steelbrain/reims-vgpu/issues/14",
+          "title": "Poor performance, visual glitches",
+          "state": "closed",
+          "updated_at": "2026-08-10T14:08:09Z"
+        },
+        {
+          "url": "https://github.com/steelbrain/reims-vgpu/issues/1",
+          "title": "this just gives me a black screen",
+          "state": "closed",
+          "updated_at": "2026-08-04T15:17:48Z"
+        }
+      ]
+    }
+  ],
+  "pull_request_details": [
+    {
+      "url": "https://github.com/ChefKissInc/Inferno/pull/3",
+      "title": "Fix display being blank",
+      "state": "closed",
+      "merged": true,
+      "head_sha": "c69fd074e392f0453ca1889c0bb096a2b3aac03f",
+      "base_sha": "142be6c6d1f5bb182be3bf611adbb51dcc27ebaa",
+      "files": [
+        "hw/arm/t8030.c",
+        "hw/display/apple_h12p.c",
+        "include/hw/display/apple_h12p.h",
+        "target/arm/ptw.c"
+      ],
+      "body": "Fixes #1"
+    },
+    {
+      "url": "https://github.com/steelbrain/reims-vgpu/pull/121",
+      "title": "guest-ram: fall back to copying when the driver refuses the RAMBlock import",
+      "state": "open",
+      "merged": false,
+      "head_sha": "fc93e58b06ca4864415085ff5c9c941ee0d0a89e",
+      "base_sha": "69a57dd69a6958e946c03b73e02db331f330f435",
+      "files": [
+        "crates/reims-vgpu/Cargo.toml",
+        "crates/reims-vgpu/src/backend/vulkan/engine/exec_compute.rs",
+        "crates/reims-vgpu/src/backend/vulkan/engine/host_ram.rs",
+        "crates/reims-vgpu/src/backend/vulkan/engine/mod.rs",
+        "crates/reims-vgpu/src/backend/vulkan/engine/types.rs",
+        "crates/reims-vgpu/src/runtime/drain/vulkan.rs",
+        "crates/reims-vgpu/src/runtime/draw/vulkan.rs",
+        "crates/reims-vgpu/src/runtime/guest_ram_map.rs",
+        "crates/reims-vgpu/src/runtime/mapping_write/vulkan.rs",
+        "crates/reims-vgpu/src/runtime/render_writeback/vulkan.rs",
+        "crates/reims-vgpu/tests/vk_engine_compute.rs"
+      ],
+      "body": "On my AMD box (RX 7600, RADV / Mesa 26.2.2, x86_64 macOS 13 guest) the iOS Simulator window stays empty. RADV refuses to import the memfd guest RAM (`VK_ERROR_INVALID_EXTERNAL_HANDLE`, amdgpu userptr only takes anonymous pages), the guest-RAM map never finds out, and the compute rail drops any dispatch whose storage image was routed to guest pages. SimRenderServer draws the device screen with exactly that kind of dispatch, so `xcrun simctl io <udid> screenshot` returns 1179x2556 transparent pixels. `REIMS_VGPU_GUEST_IMPORT=off` works around it.\n\nThis makes compute fall back to a readback like the other stores already do, makes the map stop handing out GPU-direct licences once the driver has refused a RAMBlock (same end state as `GUEST_IMPORT=off`, but logged with the reason), and fixes five decline wrappers that were tripping `observe_slug_collision`.\n\nSame guest, one boot each, guest RAM `memory-backend-memfd,share=on` as in `vm/boot-x86.sh`:\n\n| | `host_ram_import ok=false` | compute pipelines lost to the import | simulator screenshot, non-zero pixels |\n|---|---|---|---|\n| master | 4786 | 18 | 0 / 3013524 |\n| master, `GUEST_IMPORT=off` | 0 | 0 | 3013524 / 3013524 |\n| this PR | 1 | 0 | 3013524 / 3013524 |\n\nOn this branch the fail log gets one `guest_ram_map reason=guest_ram_map_backend_refused_import` line and one `vk_guest_ram_import_refused ... result=ERROR_INVALID_EXTERNAL_HANDLE` line, and the three `observe_slug_collision` lines from master are gone. I left it running for about 20 minutes with the Simulator open and in use, no guest resets.\n\nTesting:\n\n- `cargo test -p reims-vgpu --no-default-features --features backend-vulkan,host-window -- --test-threads=1`: 2347 passed, 1 failed. The failure is `vk_engine_parity::line_width_widens_a_wireframe_and_is_not_asked_of_a_filled_draw`, which fails the same way on master on this machine.\n- fmt is clean, and the clippy and rustdoc warning counts are the same as master (114 and 312).\n- 10 new tests. The compute one fails on master with `vk_engine_guest_page_write: reason=host_ram_import_retired`. The GPU one in `host_ram` skips on drivers that do import shared memory.\n\nI only tested x86/Vulkan on RADV. I haven't run it on NVIDIA, ANV or the Apple pathways, and I don't have the conformance oracle captures.\n\nSwitching the guest RAM to anonymous memory also gets RADV to import it, but then the guest panicked and rebooted about once a minute here, which looks like #100.\n\nRelated: #85, #106, #29.\n"
+    },
+    {
+      "url": "https://github.com/steelbrain/reims-vgpu/pull/117",
+      "title": "drain: a position stranded by a pipeline's end completes instead of parking forever",
+      "state": "open",
+      "merged": false,
+      "head_sha": "969352c791d98d96662757f61162965c8f334c92",
+      "base_sha": "69a57dd69a6958e946c03b73e02db331f330f435",
+      "files": [
+        "crates/reims-vgpu/src/model/mod.rs",
+        "crates/reims-vgpu/src/model/state.rs",
+        "crates/reims-vgpu/src/runtime/drain/mod.rs",
+        "crates/reims-vgpu/src/runtime/drain/tests.rs",
+        "crates/reims-vgpu/src/runtime/draw/mod.rs",
+        "crates/reims-vgpu/src/runtime/parked.rs",
+        "vm/boot-x86.sh"
+      ],
+      "body": "Between this fix and/or #116 , booting macOS 12 Monterey went from freezing on boot to running enough to render a YouTube video (at 0.5FPS, but that's besides the point).\r\n\r\n|Before|After|\r\n|-|-|\r\n|<img width=\"1504\" height=\"812\" alt=\"image\" src=\"https://github.com/user-attachments/assets/7d554189-e93b-4edc-aeef-bafbbce0f4df\" />|<img width=\"1914\" height=\"1038\" alt=\"image\" src=\"https://github.com/user-attachments/assets/b29ce465-9922-44dd-b3a0-70f36ef847d4\" /><img width=\"1798\" height=\"1011\" alt=\"image\" src=\"https://github.com/user-attachments/assets/c9859eee-9ab7-4386-a6ef-6b765a48b0c5\" />|\r\n\r\nOn the working boot, the command bar still started with black squares, but got fixed after I mouse hovered over everything.\r\n\r\nMy start command: `RAM=8G vm/boot-x86.sh --interactive --device reims-vgpu-pci --rail macos-12`\r\n\r\nSystem info:\r\n> $ fastfetch -s os:kernel:cpu:gpu -l none\r\n> OS: Kubuntu 26.04.1 LTS (Resolute Raccoon) x86_64\r\n> Kernel: Linux 7.0.0-38-generic\r\n> CPU: AMD Ryzen 7 5800X (16) @ 4.85 GHz\r\n> GPU: AMD Radeon RX 7800 XT [Discrete]\r\n\r\nEverything below is auto-generated.\r\n\r\n---\r\n\r\nStacked on #114. Until that merges, this diff also shows `dfc4de8d`; the change here is `969352c7` only.\r\n\r\n## Problem\r\n\r\n`SessionModel::pipeline_refused` and `pipeline_retired` return the transactions that can never become ready, and the scheduler forgets its waiter list for that pipeline as it hands them back. `runtime::draw::refuse_pipeline` counted them (`pipeline_refuse_stranded`) and dropped the list. `withdraw_transaction` and `parked::Release::Withdrawn` had no caller. A stranded position therefore stays parked for the life of the device and holds its channel's publication head.\r\n\r\nObserved twice on a macOS 12 x86 guest, Linux host, Vulkan rail (RADV), `reims-vgpu-pci`, before this change:\r\n\r\n- One refused fragment pipeline, `pipeline_refuse_stranded=4` (and `=5` on the second boot).\r\n- The guest then stopped submitting (`exec_phase load_n=0`) and present signals froze at `delivered=158`. The desktop never got past the wallpaper: no menu bar, Dock drawn as black tiles.\r\n- `pump_translations` re-planned the stranded positions about 7000 times a second (`parked_translations_finished` and `pipeline_usage_declined` in lockstep) until QEMU was killed six minutes later.\r\n\r\n## Change\r\n\r\n- `DeviceState::refuse_pipeline` and `retire_pipeline` queue what they strand themselves, so no caller can drop it. `take_stranded` hands the queue to the drain.\r\n- `settle_model_work` takes the queue on every pass, before the pump. Each stranded position is completed without running: its bytes are released as the new `Release::Stranded`, `parked_stranded` goes to the fail log once per pipeline, and its completion word publishes in its channel's order.\r\n- `run_parked`'s completion half is factored into `complete_position`, so both paths publish identically.\r\n\r\n**Completed rather than withdrawn**, on purpose. `SessionModel::withdraw` drops the position's own completion word, so a guest blocked on that word would hang as before. Completing is the same choice `note_unadmitted` already makes for a packet that binds a pipeline refused before it arrived: the guest loses that packet's work, not the channel.\r\n\r\nStale \"empty today, nothing is admitted yet\" docs on both doors are corrected.\r\n\r\n## Verification\r\n\r\n- New drain-level test `a_position_stranded_by_a_refused_pipeline_completes_and_publishes_its_word`: parks an exec on a pipeline, refuses it, and asserts the position is gone and its word landed. It fails with the `complete_stranded` call removed.\r\n- `reims-vgpu` lib suite, `--no-default-features --features backend-vulkan,host-window`, run serially, with only this commit applied.\r\n- Not built for `backend-metal` (Linux host).\r\n- **No live boot exercised this path.** No pipeline was refused on the later boots. Confirming it live needs a boot whose fail log shows `parked_stranded`.\r\n\r\nIndependent of the companion PR; either can merge first.\r\n\r\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\r\n"
+    }
+  ]
+}

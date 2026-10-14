@@ -62,3 +62,17 @@
 - Timeout ожидания command completion 10 секунд; отмена GPU work не обещается.
 - Коммит этапа: `test: add native iOS Metal compute and render readback probe`.
 - Дальше: база reuse-кандидатов, попытка полной сборки Inferno, manifest и export.
+
+## Этап 5 — повторное использование и работа с трассами
+
+- Создан REUSABLE-TECHNOLOGIES.md: pinned репозитории, просмотренные файлы,
+  лицензии, зависимости, результаты авторов отдельно от наших проверок,
+  решения по адаптации. Исследованы также открытые PR/issues и GitLab источники.
+- Добавлен анализатор метаданных на штатном QEMU simpletrace, без собственного
+  binary parser. Пять интеграционных synthetic fixture tests PASS.
+- Новые файлы: registry, docs/hardware/reuse-search.json, tools/analyze_trace.py,
+  tests/integration/test_trace_reader.py, reports/trace-reader.json,
+  docs/experiments/trace-analysis.md.
+- Прямой перенос APV page tables/guest protocol в AGX отклонён. metal2vulkan
+  остаётся кандидатом backend, m1n1/Mesa — decoder/ABI reference.
+- Коммит этапа: `feat: reuse QEMU trace reader and record pinned technology decisions`.
