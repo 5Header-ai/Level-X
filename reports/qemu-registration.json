@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "version",
+      "args": [
+        "--version"
+      ],
+      "status": "PASS",
+      "exit": 0,
+      "matched_lines": [
+        "QEMU emulator version ChefKissInferno-1.0.0rc1_QEMU-10.2.2_10.1.3_hybrid",
+        "Copyright (c) 2003-2025 Fabrice Bellard and the QEMU Project developers"
+      ],
+      "output_sha256": "16d3380dd248c8da1f0dcf343adfac01938a84380d89fb79b9b7682f379013ce"
+    },
+    {
+      "name": "machine_type",
+      "args": [
+        "-machine",
+        "help"
+      ],
+      "status": "PASS",
+      "exit": 0,
+      "matched_lines": [
+        "t8030                Apple T8030 SoC (iPhone 11)"
+      ],
+      "output_sha256": "0f1fba268b10e2a234144e922d50070a470aa90730c8ed117cd1c07761f8cd77"
+    },
+    {
+      "name": "checked_scanout_property",
+      "args": [
+        "-device",
+        "apple-display-pipe-v4,help"
+      ],
+      "status": "PASS",
+      "exit": 0,
+      "matched_lines": [
+        "  levelx-checked-scanout=<bool> - on/off (default: off)"
+      ],
+      "output_sha256": "0f4d2c04a85acccb6d0563f0405efb0edfc1f9bab3441b9473b55f3385d8478b"
+    },
+    {
+      "name": "trace_events",
+      "args": [
+        "-trace",
+        "help"
+      ],
+      "status": "PASS",
+      "exit": 0,
+      "matched_lines": [
+        "levelx_adp_mmio_read",
+        "levelx_adp_mmio_write",
+        "levelx_adp_scanout"
+      ],
+      "output_sha256": "16aa6c5674f3048c7916352e2bbd6ff29e692ed82608db331df5cde9d8700b19"
+    }
+  ],
+  "binary_sha256": "5b81b506c8f54c3e26b2e51efeb897484f584e2561fddff76fa6497455dd2572",
+  "scope": "CLI registration only; device realization/MMIO/DART/IRQ/iOS/Metal NOT RUN"
+}

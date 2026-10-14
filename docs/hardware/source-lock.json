@@ -1,0 +1,121 @@
+[
+  {
+    "repository": "MakrSas/Inferno",
+    "sha": "b76fa575831d94a80db169ffb3c76d9094a648bd",
+    "tree_truncated": false,
+    "files": {
+      "COPYING": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "LICENSE": "fd5029b1e42da571b789e2b6a13abb3c00664e339ed87d0e17ffec04d33b8ff9",
+      "README.md": "de0173f3c4e4f759d4247658e1b17f96e9c906849ac560180921211508db2991",
+      "VERSION": "d9bb4a2683b75ebb91fe14d9ec35b2e61f0e7047852d1a38a33c5683c995b9be",
+      "hw/arm/dart.c": "f3ec8ec8ea2b493dbae0e29e5607c558b7919a21163a2212ba21872f574183dd",
+      "hw/arm/t8030.c": "1b49454b2b1a8ac76f60aaa8bb770824f0cb06531db8c96d94a5fdc43aa9deab",
+      "hw/display/apple_displaypipe_v2.c": "0b86645ec23eeea89c2789e83274388f5978435a83b8ce0b0e05e8c07fedb4fd",
+      "hw/display/apple_displaypipe_v4.c": "9add4e5b25b9efefcdfa276e2c0d067e9a98fce9929b7e21c17f43aa4651163f",
+      "include/hw/display/apple_displaypipe_v2.h": "517dc53359b7ad9a502881e073579a2caee15e8636f14672428d08fa9985ffb6",
+      "include/hw/display/apple_displaypipe_v4.h": "46e5ea416ca3e5a2597db1fcbf04e77e160996eb38df577cb824b5009a00c4b5"
+    }
+  },
+  {
+    "repository": "den0620/QEMUAppleSilicon",
+    "sha": "80d84158cb42889f8f3b07bb98c6e449f8e588c0",
+    "tree_truncated": false,
+    "files": {
+      "COPYING": "dd3ce02338c3a48abb6ba59b48809f7108a8bd242cb0cc8be90daafa30707c28",
+      "LICENSE": "139c64b7a9ae62858ff969aae622ecfcf4f1519655bd92d2e70a1a2fb615690e",
+      "README.md": "6cf88de030ce80af471d1929d5ae7ea856f68b01df1791ec15ea1c1cdafbeb21",
+      "VERSION": "08bc77bbbe197549458d69ce6f4e89c2b61e4b3a88115d730cae6842baec57b0",
+      "hw/arm/apple-silicon/dart.c": "6c062e818ba4134cc65a20a5cb70af02b131258db027e29f348d3f63424acb03",
+      "hw/arm/apple-silicon/t8030.c": "00562493eab9bce2863dfa62241cf2d732c86ecc1346916f14a31adc2f164793",
+      "hw/display/apple_displaypipe_v2.c": "2b2c9b3cc063f587159e3461ba93cdc5449573039ec07e6ee42e38a247f3b9b3",
+      "hw/display/apple_displaypipe_v4.c": "3baf20e5fb463f8b62163089d4f4553181b3d3801dfb5169208b274d3b8bfa17",
+      "include/hw/display/apple_displaypipe_v2.h": "2bce8765e2919d4aaae54623385f2a93390eec75cc3b5b69ca599ac9fa0cd70f",
+      "include/hw/display/apple_displaypipe_v4.h": "fa775df1ee97359bd1a3187a4aa806dccf81a22fd1f3ee9a14e5bf30312fce38"
+    }
+  },
+  {
+    "repository": "MakrSas/orchard-ios",
+    "sha": "fab0f9f0d60acfdc2488181385ac53b7b4ea23c6",
+    "tree_truncated": false,
+    "files": {
+      "README.md": "0ef705ef288806a0038e78099d8fa33bf9b37a45732b0e972e7ab63a55acb9de",
+      "qemu/hw/display/reims-vgpu-dirty.c": "8d9168e3cc0774f10495c2edcf2865d797e2e88d7193aff15900a1a8a7ec9061",
+      "qemu/hw/display/reims-vgpu-dirty.h": "19de6bbb86e9e3c48c6ddffa6157b0b522f125084d7a45fdbf1579ad528f503b",
+      "qemu/hw/display/reims-vgpu-mmio.c": "cee1838965044ffbeb793d1e0657aaf0832510903efa27f3a06ee13c03dea1d7",
+      "qemu/hw/display/reims-vgpu-pci.c": "4f84795d6a37021f5ec5d6b0103032b2f408df4f9d183451194f2a4a9f17f764",
+      "qemu/hw/display/reims-vgpu-shim.c": "cade6de7b3f0a75aa6109451a5eb7ab9b8d57ed3b3263954bd9a7d71045826cd",
+      "qemu/hw/display/reims-vgpu-shim.h": "8ddadcca394242b7239b5e9779fc95443c5d96c34aff9400be30707ab027b17b",
+      "reims-vgpu/AGENTS.md": "528c058dbdaa8b0398a80e59c65be039ded8c42a1a2d122f8e3d496e65a22da7",
+      "reims-vgpu/CLAUDE.md": "81cb52f757cc7b49f723246bab53929968228132bcb1a35d5fd5499b316aa8ae",
+      "reims-vgpu/README.md": "b37fb3b2c96eada1a4eb47b6efbed665e0e5ca91cb85cc3c1428fb9026718d56",
+      "reims-vgpu/conformance/README.md": "81976a4f91b37bd562a4822defb7ebe4a1a828f42de89658f0eefbf6eb040055",
+      "reims-vgpu/conformance/baselines/native-apple-m4-macos15.txt": "b2cc3a2df623e25c2c72bc279a46a7e0f04ae29bf2ce85504a0072f78d47c6f3",
+      "reims-vgpu/conformance/expectations/macos-13/driver-errors.txt": "5484ddd37cd50ff02ea009df1e3eb82790b64af11c8eee2bc7a240f1847ed61c",
+      "reims-vgpu/conformance/expectations/macos-13/translation-errors.txt": "53e1edeb0faa543b8f5e8a7f3a3c59c47698f35fc60406346094359b391201d5",
+      "reims-vgpu/conformance/expectations/macos-15/driver-errors.txt": "886e5fea07f5b72ead3b08524ac75edaaaa0bc96656e7416604928ee75c1e38c",
+      "reims-vgpu/conformance/expectations/macos-15/translation-errors.txt": "f763caf2746e470235f94aba93ae759263ee5c210188f0f364be71f0e3d1a5df",
+      "reims-vgpu/crates/reims-vgpu-efi/README.md": "5a95d006e2a95ad3af7049033601b3b1347b33f20e835d2b5485cfb7fe795395",
+      "reims-vgpu/crates/reims-vgpu-efi/scripts/reims-vgpu-efi-rom/README.md": "49b444e7c6e356f1eb15350c6dc5452850342d3e819236e9f5dfe968af51cc50",
+      "reims-vgpu/crates/reims-vgpu-wire/AGENTS.md": "223ac81fea5ff8c2418ee54b5811218c280f5abd73b2b4702c6e852eecf72237",
+      "reims-vgpu/crates/reims-vgpu-wire/README.md": "ed782ac4c1fe7581ea197f4a0d6b48f13e46847fae3c9e4b399ef30b3aab5812",
+      "reims-vgpu/crates/reims-vgpu-wire/oracle/encoder.h": "9965bdfd2d09b3f26f8d00f41f913566b643de7c3114054e52aa835364a7715b",
+      "reims-vgpu/crates/reims-vgpu-wire/oracle/oracle.m": "068666b9b9ec7f206746a7d70e5949ec592ad9bff573259ce3b52f5a31addbd0",
+      "reims-vgpu/crates/reims-vgpu/include/reims_vgpu_qemu_abi.h": "5f51369cfba52b69bb28b70c5553b37f62c1b2a995862a9aece8d7eff1f8de80",
+      "reims-vgpu/crates/reims-vgpu/src/observe/README.md": "88b21917539af3de92cda25d0608bab878dd9ea892006606876ff6b23a57617f",
+      "reims-vgpu/crates/reims-vgpu/src/runtime/census/README.md": "2ab4e3b66f66ae187cb64c3582bc2f971c35b7aae8bc8ad488aa879748f02439",
+      "reims-vgpu/crates/reims-vgpu/tests/fixtures/air/README.md": "0a2ec7d681ce4ae365909eff5c526a8875d1d993190f73e8d77f2f34dbc98fd6",
+      "reims-vgpu/scripts/feature-matrix/README.md": "be143b21ab8dd0b471d53fbbd12af2e4d8257e021c83ef685ab9f7756dc968f7",
+      "reims-vgpu/scripts/menu-close-probe/README.md": "1b087a1f44a8b143aa08c8281185dd4c77c5d5f1d3182ea92de74a753f1f76ae",
+      "reims-vgpu/scripts/modal-button-probe/README.md": "9c2751e4c1d24b92fb9f4c2c92369de09f87a9a59640bf86ab5823809037b197",
+      "reims-vgpu/scripts/qemu-build/README.md": "f5957192f7c2e021340b87d14831170785d6fccee1e44fd3fe8906631b27ade6",
+      "reims-vgpu/scripts/qmp/README.md": "374a1a91275ed6845b546ba2f23c8c1493027b68bf9567eabe70eb9b36f0fe09",
+      "reims-vgpu/scripts/runtime-dead/README.md": "acc5ae107e80013093f659ee3319d21b0829d677d93baf4cc369edc3617cf3b0",
+      "reims-vgpu/scripts/screenshot/README.md": "296e3c563dc9d0d2fef851f5755abe4422bf5300178d1284b99868406e0e78a1",
+      "reims-vgpu/scripts/sustained-animation-probe/README.md": "5ea4c3183026f6f51f78981933c9635e0a3a5354549dee89a6def8e98d60464d",
+      "reims-vgpu/scripts/visual-gate/README.md": "0864dcb63784cd7f1b52f435ef181f1292d30953e726973454c3a1036d5e54fe",
+      "reims-vgpu/scripts/vmapple-guest-config/README.md": "fe8a3c6161963870cdda05b4e23b6ee0cf54ed2105132129bfc77c2438af7853",
+      "reims-vgpu/scripts/vmapple-provision/README.md": "ebabceb386c5289bd8bd1dc3140bf04e7a4422c825158ae1995ff417ebfa4cfb",
+      "reims-vgpu/scripts/vmapple-shutdown/README.md": "7f5fb0a3c7962c9535dc023d4414578f405d4b8a2a3acf484d2fbfcb9dbfd4ca",
+      "reims-vgpu/scripts/vmapple-snapshot/README.md": "568b40cc589462e6bca3b8979205e71791ddaf76fbd88eeed76ea84005b0eaf8",
+      "reims-vgpu/scripts/wallpaper-probe/README.md": "e263c9a34e33dbf01ae38f428838edb0ff95e9d681e38fb48d2fc597dd7cdd4b",
+      "reims-vgpu/scripts/web-content-probe/README.md": "8222aa570c15fa9d1b888758d5f79809053c316ad60ceeadb2b3cbd8d26b6698",
+      "reims-vgpu/scripts/window-drag-probe/README.md": "c10862bb746a6125cd46c49519d008f5407007c7911a1f01a5ab86bffe292a12",
+      "reims-vgpu/scripts/window-drag-probe/drag.c": "8224ac75607a30e961efaf32676366366f8022513d2760271baab53f358037ac",
+      "reims-vgpu/scripts/wire-oracle/README.md": "35b25a6f89dfd6a569710dfdef01cec16a082c25cee37f251bf7fc18c6b91f7f",
+      "reims-vgpu/vendor/qemu-patches/0001-vmapple-enable-arm-macOS-guest-boot-on-a-macOS-26-ho.patch": "093aee0840ab14f94b09e2fd91f1a1c719def5d30764734952b1a6ecc588f9a3",
+      "reims-vgpu/vendor/qemu-patches/0002-hvf-skip-NO_RAW-cpregs-in-hvf_arch_init_vcpu-macOS-2.patch": "545e512c052ea103e100dd549ca99bc1bee4762de334edf9b6b8efb2bda4afe6",
+      "reims-vgpu/vendor/qemu-patches/0003-hvf-emulate-ISV-0-data-aborts-LDP-STP-SIMD-FP-indexe.patch": "618e704ac753fadbc1055e9085d51b1cc2f6bdc631dace2a4ae43993f07aea5e",
+      "reims-vgpu/vendor/qemu-patches/0004-hvf-place-the-in-kernel-vGIC-at-the-machine-s-GIC-ba.patch": "910056615cb7ad3332b433e69dbeff83445f508f1a308226adb9a8439f9b7019",
+      "reims-vgpu/vendor/qemu-patches/0005-vmapple-gfx-device-property-for-apple-gfx-mmio-Reims-VGPU-s.patch": "d02b488282f0f5a8ad86e0c239fa4349e32376260688d96c93c70172450cb167",
+      "reims-vgpu/vendor/qemu-patches/README.md": "fc7ddc97b34408c26f53c6fb4059a035c47b4806d6dc328fd232b60a5503dfc9",
+      "reims-vgpu/vm/README.md": "e92ec94d5b3668d1847ef2ad2be66e7c2e00f774233f77d28303eabee6070256"
+    }
+  },
+  {
+    "repository": "qemu/qemu",
+    "sha": "f8ed81651e61d9c2166df6121ce2af0f44f06b3e",
+    "tree_truncated": false,
+    "files": {
+      "COPYING": "dd3ce02338c3a48abb6ba59b48809f7108a8bd242cb0cc8be90daafa30707c28",
+      "LICENSE": "139c64b7a9ae62858ff969aae622ecfcf4f1519655bd92d2e70a1a2fb615690e",
+      "VERSION": "b326d5453bddaed3dc5bdb1e212584451935da3ce420d0c06d4986f09417d3b6",
+      "hw/display/apple-gfx-mmio.m": "3bb32e97cda69f5954ba1f66118c9b08ab6d95a9a8d292bcc6ecc446c371210c",
+      "hw/display/apple-gfx.h": "6b957793486ab0f1469a2dd48c0898b847d73f4a11a359503af034a8b2b80e60",
+      "hw/display/apple-gfx.m": "8a0d93a946c77f6e7386cab38c0cc26c9b1f7e9cd69e7dea65a9651274528a7c",
+      "include/system/dma.h": "14e4c2820bd96a1aac072a0c636ee77be22be00067c3cc0f77612385cf8dd136",
+      "system/memory.c": "1706bc565c96fc6c8dcb465aa28cd2e273fdf243e762c1dd4ac00f6c73569d7d"
+    }
+  },
+  {
+    "repository": "apple-oss-distributions/xnu",
+    "sha": "bb611c8fecc755a0d8e56e2fa51513527c5b7a0e",
+    "tree_truncated": false,
+    "files": {
+      "README.md": "3ef5b163f74fa961b06c3b228e4a980fde630961b02122c093035bd36db94730",
+      "iokit/IOKit/IOBufferMemoryDescriptor.h": "1565be10f28c849c0b9f1a8624e9c332d83824c54984e9f4bc70febcddc36604",
+      "iokit/IOKit/IODMACommand.h": "b051ce89dbf0c74c2c181e469300ce638ba2487bf627d40fb303201cb2a516bc",
+      "iokit/Kernel/IODMACommand.cpp": "f37390148a9e2866ed938af77705176bd2ec30408ab0cb3b87b6b422a9583782",
+      "iokit/Kernel/IOMemoryDescriptor.cpp": "1c3208bc58106eb69ffef1098cec99a4f9763a0a612e9e7294e820209f3335a5"
+    }
+  }
+]

@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "name": "levelx-iphone-gpu-engine",
+  "version": "0.1.0-preliminary",
+  "branch": "feature/levelx-gpu",
+  "baseline": {
+    "repository": "https://github.com/ChefKissInc/Inferno.git",
+    "sha": "cc4302a99167abec69b714cfd00c38caece7e7de",
+    "version": "ChefKissInferno-1.0.0rc1_QEMU-10.2.2_10.1.3_hybrid",
+    "actual_levelx_baseline_available": false
+  },
+  "target": {
+    "host": "Windows x86_64",
+    "emulation": "TCG",
+    "qemu_target": "aarch64-softmmu",
+    "soc": "T8030/A13",
+    "product": "iPhone12,1",
+    "intended_ios_build": "18A5351d",
+    "ios_tested": false
+  },
+  "api": {
+    "abi_version": 1,
+    "raw_pixel_bytes": 4,
+    "dimension_max": 16384,
+    "snapshot_cap_bytes": 67108864,
+    "adapter_iova_max": 4294967295,
+    "dma_chunk_boundary_bytes": 4096,
+    "chunk_boundary_is_hardware_page_size": false
+  },
+  "feature_flag": {
+    "qom_type": "apple-display-pipe-v4",
+    "property": "levelx-checked-scanout",
+    "default": false
+  },
+  "patches": [
+    {
+      "order": 1,
+      "path": "patches/inferno/0001-display-add-opt-in-checked-scanout-adapter-for-Level.patch",
+      "commit": "c45f2f5d5fbdc2e707ebdf227177fd9baa4cd3f9",
+      "sha256": "8ef774e64f4d717422d16ca1aae07ca08a50c2f8567ecf37e46309541201a077"
+    },
+    {
+      "order": 2,
+      "path": "patches/inferno/0002-display-trace-DisplayPipe-MMIO-and-checked-DMA-outco.patch",
+      "commit": "9278a7d8e5d42a4d52d154ec25bf0368516347e0",
+      "sha256": "f869129a36adac9dd62534af2555afaf6ecb414c90f9afc79ca221edef00dfb2"
+    }
+  ],
+  "upstream_files": {
+    "added": [
+      "hw/display/levelx_scanout.c",
+      "hw/display/levelx_scanout.h"
+    ],
+    "modified": [
+      "hw/display/apple_displaypipe_v4.c",
+      "hw/display/meson.build",
+      "hw/display/trace-events"
+    ]
+  },
+  "dependencies": {
+    "core": [
+      "C11",
+      "libc"
+    ],
+    "adapter_existing": [
+      "QEMU DMA/QOM/BH/IRQ",
+      "GLib",
+      "Pixman",
+      "libpng",
+      "DART AddressSpace"
+    ],
+    "additional_runtime_libraries": [],
+    "build_environment_record": "reports/msys2-packages.txt",
+    "source_build_dependencies": {
+      "lzfse": "e634ca58b4821d9f3d560cdc6df5dec02ffc93fd",
+      "util/mlib": "d0fd65a8695218ffabf2aa543ce51ca3af69536f",
+      "dtc": "b6910bec11614980a21e46fbccc35934b671bd81",
+      "keycodemapdb": "f5772a62ec52591ff6870b7e8ef32482371f22c6"
+    },
+    "research_registry": "REUSABLE-TECHNOLOGIES.md"
+  },
+  "licenses": {
+    "new_original_files": "MIT",
+    "display_adapter": "AGPL-3.0-or-later",
+    "inventory": "LICENSES.md",
+    "closed_apple_binaries_included": false
+  },
+  "integrity": [
+    {
+      "path": "src/levelx_scanout.c",
+      "sha256": "886792de22a3a371474380088cd3bf3298f975c6ab443ece73a1cdc8b44f63b4"
+    },
+    {
+      "path": "include/levelx_scanout.h",
+      "sha256": "b55d59f0c5c93453978cb9388c7bce6632ca9c3575a37cce5889762d01b3457e"
+    },
+    {
+      "path": "patches/inferno/0001-display-add-opt-in-checked-scanout-adapter-for-Level.patch",
+      "sha256": "8ef774e64f4d717422d16ca1aae07ca08a50c2f8567ecf37e46309541201a077"
+    },
+    {
+      "path": "patches/inferno/0002-display-trace-DisplayPipe-MMIO-and-checked-DMA-outco.patch",
+      "sha256": "f869129a36adac9dd62534af2555afaf6ecb414c90f9afc79ca221edef00dfb2"
+    }
+  ],
+  "validation": {
+    "unit_msvc": "reports/unit-msvc.json",
+    "unit_msvc_asan": "reports/unit-msvc-asan.json",
+    "unit_gcc": "reports/unit-gcc.json",
+    "patch_transfer": "reports/transfer.json",
+    "trace_reader": "reports/trace-reader.json",
+    "windows_build": "reports/windows-build.json",
+    "compile_status": "PASS",
+    "qtest": "BLOCKED: harness absent in upstream",
+    "ios": "NOT RUN",
+    "metal": "NOT RUN",
+    "physical_iphone11": "NOT RUN",
+    "github_actions": "reports/github-ci.json"
+  },
+  "acceptance_levels": {
+    "1": "PARTIAL",
+    "2": "NOT MET",
+    "3": "NOT RUN",
+    "4": "NOT RUN",
+    "5": "NOT RUN"
+  },
+  "integration_guide": "INTEGRATION.md",
+  "rollback": "Disable flag and restart; revert applied patch commits in reverse order",
+  "repository": "https://github.com/5Header-ai/Level-X",
+  "qemu_registration_report": "reports/qemu-registration.json",
+  "release_head_location": "../levelx-release.json"
+}

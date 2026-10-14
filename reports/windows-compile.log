@@ -1,0 +1,65 @@
+Excerpt of successful 1949-step compilation. Full original log SHA256: e81677961574e402f414606d2036023e8746bb99c04cdafb02ad39118bc1a8fb
+
+[1/1949] Generating config-poison.h with a custom command (wrapped by meson to capture output)
+[2/1949] Generating qemu-version.h with a custom command (wrapped by meson to capture output)
+fatal: No names found, cannot describe anything.
+
+[3/1949] Generating qemu-img-cmds.h with a custom command (wrapped by meson to capture output)
+[4/1949] Generating hmp-commands.h with a custom command (wrapped by meson to capture output)
+[5/1949] Generating trace/trace-root.h with a custom command
+[6/1949] Generating hmp-commands-info.h with a custom command (wrapped by meson to capture output)
+[7/1949] Generating trace/trace-root.c with a custom command
+[8/1949] Generating trace/trace-crypto.h with a custom command
+[9/1949] Generating trace/trace-crypto.c with a custom command
+[10/1949] Generating trace/trace-qapi.h with a custom command
+
+Selected adapter object builds:
+[1077/1949] Compiling C object libsystem.a.p/hw_display_apple_displaypipe_v4.c.obj
+[1080/1949] Compiling C object libsystem.a.p/hw_display_levelx_scanout.c.obj
+
+Final build steps:
+                 from C:/Users/1/Documents/Codex/2026-10-14/cl-t/work/inferno-build/target/arm/cpregs.h:26,
+                 from ../target/arm/cpu.h:36,
+                 from C:/Users/1/Documents/Codex/2026-10-14/cl-t/work/inferno-build/include/accel/accel-cpu-target.h:25,
+                 from ../accel/accel-target.c:27:
+C:/Users/1/Documents/Codex/2026-10-14/cl-t/work/inferno-build/util/mlib/m-core.h: In function 'm_core_snprintf':
+C:/Users/1/Documents/Codex/2026-10-14/cl-t/work/inferno-build/util/mlib/m-core.h:3101:3: warning: function 'm_core_snprintf' might be a candidate for 'gnu_printf' format attribute [-Wsuggest-attribute=format]
+ 3101 |   int ret = vsnprintf(str, size, format, args);
+      |   ^~~
+[1941/1949] Compiling C object libqemu-aarch64-softmmu.a.p/semihosting_arm-compat-semi.c.obj
+In file included from C:/Users/1/Documents/Codex/2026-10-14/cl-t/work/inferno-build/util/mlib/m-algo.h:28,
+                 from C:/Users/1/Documents/Codex/2026-10-14/cl-t/work/inferno-build/util/mlib.h:28,
+                 from C:/Users/1/Documents/Codex/2026-10-14/cl-t/work/inferno-build/target/arm/cpregs.h:26,
+                 from ../target/arm/cpu.h:36,
+                 from ../semihosting/arm-compat-semi.c:158:
+C:/Users/1/Documents/Codex/2026-10-14/cl-t/work/inferno-build/util/mlib/m-core.h: In function 'm_core_snprintf':
+C:/Users/1/Documents/Codex/2026-10-14/cl-t/work/inferno-build/util/mlib/m-core.h:3101:3: warning: function 'm_core_snprintf' might be a candidate for 'gnu_printf' format attribute [-Wsuggest-attribute=format]
+ 3101 |   int ret = vsnprintf(str, size, format, args);
+      |   ^~~
+[1942/1949] Compiling C object libqemu-aarch64-softmmu.a.p/accel_stubs_hvf-stub.c.obj
+[1943/1949] Compiling C object libqemu-aarch64-softmmu.a.p/accel_stubs_xen-stub.c.obj
+[1944/1949] Compiling C object libqemu-aarch64-softmmu.a.p/accel_stubs_kvm-stub.c.obj
+In file included from C:/Users/1/Documents/Codex/2026-10-14/cl-t/work/inferno-build/util/mlib/m-algo.h:28,
+                 from C:/Users/1/Documents/Codex/2026-10-14/cl-t/work/inferno-build/util/mlib.h:28,
+                 from C:/Users/1/Documents/Codex/2026-10-14/cl-t/work/inferno-build/target/arm/cpregs.h:26,
+                 from ../target/arm/cpu.h:36,
+                 from C:/Users/1/Documents/Codex/2026-10-14/cl-t/work/inferno-build/include/system/kvm.h:222,
+                 from ../accel/stubs/kvm-stub.c:14:
+C:/Users/1/Documents/Codex/2026-10-14/cl-t/work/inferno-build/util/mlib/m-core.h: In function 'm_core_snprintf':
+C:/Users/1/Documents/Codex/2026-10-14/cl-t/work/inferno-build/util/mlib/m-core.h:3101:3: warning: function 'm_core_snprintf' might be a candidate for 'gnu_printf' format attribute [-Wsuggest-attribute=format]
+ 3101 |   int ret = vsnprintf(str, size, format, args);
+      |   ^~~
+[1945/1949] Compiling C object libqemu-aarch64-softmmu.a.p/accel_stubs_nvmm-stub.c.obj
+[1946/1949] Compiling C object libqemu-aarch64-softmmu.a.p/accel_stubs_whpx-stub.c.obj
+[1947/1949] Compiling C object qemu-system-aarch64.exe.p/system_main.c.obj
+[1948/1949] Compiling C object libqemu-aarch64-softmmu.a.p/target_arm_tcg_sve_helper.c.obj
+In file included from C:/Users/1/Documents/Codex/2026-10-14/cl-t/work/inferno-build/util/mlib/m-algo.h:28,
+                 from C:/Users/1/Documents/Codex/2026-10-14/cl-t/work/inferno-build/util/mlib.h:28,
+                 from C:/Users/1/Documents/Codex/2026-10-14/cl-t/work/inferno-build/target/arm/cpregs.h:26,
+                 from ../target/arm/cpu.h:36,
+                 from ../target/arm/tcg/sve_helper.c:21:
+C:/Users/1/Documents/Codex/2026-10-14/cl-t/work/inferno-build/util/mlib/m-core.h: In function 'm_core_snprintf':
+C:/Users/1/Documents/Codex/2026-10-14/cl-t/work/inferno-build/util/mlib/m-core.h:3101:3: warning: function 'm_core_snprintf' might be a candidate for 'gnu_printf' format attribute [-Wsuggest-attribute=format]
+ 3101 |   int ret = vsnprintf(str, size, format, args);
+      |   ^~~
+[1949/1949] Linking target qemu-system-aarch64.exe

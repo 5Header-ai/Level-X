@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-14",
+  "compile_status": "PASS",
+  "link_status": "PASS",
+  "normal_configure_status": "FAIL: final symlink-install-tree.py postconf; WinError 1314 independently confirmed",
+  "compile_workaround": "Unmodified generated build.ninja copied to build-compile.ninja; compile with frozen graph",
+  "runtime_workaround": "Incomplete generated qemu-bundle renamed to qemu-bundle-incomplete before CLI tests",
+  "baseline": "cc4302a99167abec69b714cfd00c38caece7e7de",
+  "patched_head": "9278a7d8e5d42a4d52d154ec25bf0368516347e0",
+  "tracked_source_diff": "CLEAN",
+  "host": "Windows x86_64; workspace-local MSYS2/UCRT64",
+  "compiler": "GCC 16.2.0 MSYS2 Rev6",
+  "meson": "1.12.1",
+  "ninja": "1.13.2",
+  "python": "3.14.8",
+  "configure_args": [
+    "--target-list=aarch64-softmmu",
+    "--enable-pixman",
+    "--enable-png",
+    "--enable-lzfse",
+    "--enable-nettle",
+    "--enable-gnutls",
+    "--disable-guest-agent",
+    "--disable-werror",
+    "--disable-tools",
+    "--enable-trace-backends=log,simple"
+  ],
+  "compile_command": "ninja -f build-compile.ninja -j4 qemu-system-aarch64.exe",
+  "generated_trace_schema_command": "ninja -f build-compile.ninja trace/trace-events-all",
+  "binary_sha256": "5b81b506c8f54c3e26b2e51efeb897484f584e2561fddff76fa6497455dd2572",
+  "binary_exported": false,
+  "build_steps": 1949,
+  "adapter_objects": {
+    "hw_display_apple_displaypipe_v4.c.obj": "d3b125f364db78d540d2f22a629ec8f39c36e839e812a84f76c103123fd5dc54",
+    "hw_display_levelx_scanout.c.obj": "cfbcc8f2b9863f4f576053f14084bcfe3064a0a085e3af151a3e0074b1726103"
+  },
+  "logs": [
+    "reports/windows-configure.log",
+    "reports/windows-compile.log"
+  ],
+  "full_compile_log_sha256": "e81677961574e402f414606d2036023e8746bb99c04cdafb02ad39118bc1a8fb",
+  "cli_registration": "reports/qemu-registration.json",
+  "ios": "NOT RUN",
+  "metal": "NOT RUN",
+  "scope": "Public baseline + two GPU patches; no private Level X baseline, device realization, DART/IRQ/guest checks"
+}

@@ -1,0 +1,8 @@
+build/
+__pycache__/
+*.pyc
+*.obj
+*.exe
+*.pdb
+*.ilk
+.DS_Store
