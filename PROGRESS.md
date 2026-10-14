@@ -76,3 +76,19 @@
 - Прямой перенос APV page tables/guest protocol в AGX отклонён. metal2vulkan
   остаётся кандидатом backend, m1n1/Mesa — decoder/ABI reference.
 - Коммит этапа: `feat: reuse QEMU trace reader and record pinned technology decisions`.
+
+## Этап 6 — реальная компиляция Inferno на Windows
+
+- Развёрнута отдельная workspace MSYS2/UCRT64; системные настройки не менялись.
+- Официальный LZFSE собран без изменений. Зависимости зафиксированы в reports.
+- Точный public baseline + 2 patches: все 1949 шагов compile/link PASS.
+  Дополнительного tracked diff в Inferno нет. Бинарник не распространяется.
+- Нормальный configure postconf не прошёл из-за symbolic-link privileges;
+  frozen generated graph дал возможность проверить компиляцию. Неполный
+  generated qemu-bundle сохранён под другим именем, после чего CLI стартует.
+- 4 CLI registration tests PASS; property по умолчанию off. Это не guest boot.
+- Те же 9 C unit groups прошли также GCC16.2.0. MMIO/DART/IRQ/iOS/Metal NOT RUN.
+- Новые файлы: reports/windows-*, reports/msys2-packages.txt, unit-gcc.json,
+  qemu-registration.json, docs/experiments/windows-build.md,
+  tests/integration/test_qemu_registration.py. Обновлена текущая матрица готовности.
+- Коммит этапа: `build: compile patched Inferno on Windows and verify CLI registration`.

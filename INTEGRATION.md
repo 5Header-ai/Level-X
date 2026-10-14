@@ -62,13 +62,16 @@ python tests/integration/verify_transfer.py /path/to/Inferno --report reports/lo
 
 ## Сборка
 
-Автономный C-модуль реально проверен: `python tools/test.py`, затем `--sanitize`.
+Автономный C-модуль реально проверен: `python tools/test.py`, затем `--sanitize`,
+а также `--cc gcc` внутри UCRT64.
 
 Для Inferno нужен рабочий upstream build environment: GNU/Clang toolchain,
 Python, Meson/Ninja/pkg-config, GLib, Pixman, PNG, libtasn1 и включённые зависимости
 ветки (в частности lzfse/nettle/gnutls при указанных ниже опциях). Используйте
 проверенный рецепт сборки вашего Windows baseline. MSVC сам по себе не заменяет
-GNU-окружение всего Inferno. Никаких пакетов в систему эта работа не устанавливала.
+GNU-окружение всего Inferno. Для проверки развернута отдельная MSYS2 root внутри
+workspace. Точный рецепт и ограничение postconf symbolic links:
+[Windows build](docs/experiments/windows-build.md). Системные настройки не менялись.
 
 Пример исходной Linux/macOS конфигурации для проверки — **NOT RUN здесь**:
 
@@ -110,6 +113,9 @@ ninja
 Trace events доступны после патча 2; они логируют метаданные, не содержимое buffers.
 Синтаксис событий проверен штатным `scripts/tracetool.py` baseline.
 Не трактуйте FRAME_PROCESSED как Metal completion: прежняя IRQ-семантика сохранена.
+Для binary traces добавлен анализатор на штатном QEMU simpletrace:
+[trace-analysis](docs/experiments/trace-analysis.md). Его synthetic tests не являются
+записью с гостя.
 
 ## Регрессии и ограничения
 
